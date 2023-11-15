@@ -2,10 +2,10 @@ import 'package:demo_project/screen/screen_home.dart';
 import 'package:demo_project/screen/screen_settings.dart';
 import 'package:demo_project/screen/screen_food.dart';
 import 'package:demo_project/bottomNavigation.dart';
-import 'package:demo_project/section/settingsScreen/profile/profile.dart';
+
 import 'package:flutter/material.dart';
 
-import 'db/functions/db_functions.dart';
+
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
 
   final _pages =  [
     const ScreenHome(),
-    ScreenFood(),
+    const ScreenFood(),
     const ScreenSettings(),
   ];
 

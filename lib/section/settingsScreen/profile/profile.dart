@@ -1,5 +1,4 @@
 import 'package:demo_project/boxes/boxes.dart';
-import 'package:demo_project/db/functions/db_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../../../db/model/date_modal.dart';
@@ -20,6 +19,7 @@ class _ProfileState extends State<Profile> {
     OpenBox();
   }
 
+  // ignore: non_constant_identifier_names
   void OpenBox() async {
     box1 = await Hive.openBox<LoginModal>('login_db');
     setState(() {});
@@ -35,14 +35,12 @@ class _ProfileState extends State<Profile> {
           return ListView.builder(
             itemCount: box.length,
             itemBuilder: (context, index) {
-              return Container(
-                child: Column(
-                  children: [
-                    Text('Name: ${data[index].name.toString()}'),
-                    Text('Email: ${data[index].email.toString()}'),
-                    Text('Password: ${data[index].password.toString()}'),
-                  ],
-                ),
+              return Column(
+                children: [
+                  Text('Name: ${data[index].name.toString()}'),
+                  Text('Email: ${data[index].email.toString()}'),
+                  Text('Password: ${data[index].password.toString()}'),
+                ],
               );
             },
           );

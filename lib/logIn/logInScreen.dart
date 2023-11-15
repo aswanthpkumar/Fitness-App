@@ -1,5 +1,4 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/boxes/boxes.dart';
 import 'package:demo_project/db/functions/db_functions.dart';
 import 'package:demo_project/db/model/date_modal.dart';
 import 'package:demo_project/home.dart';
@@ -7,15 +6,15 @@ import 'package:demo_project/main.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class LoginSignUpScreen extends StatefulWidget {
-  const LoginSignUpScreen({super.key});
+class LoginSignupScreen extends StatefulWidget {
+  const LoginSignupScreen({super.key});
   
 
   @override
-  State<LoginSignUpScreen> createState() => _LoginSignUpScreenState();
+  State<LoginSignupScreen> createState() => _LoginSignUpScreenState();
 }
 
-class _LoginSignUpScreenState extends State<LoginSignUpScreen> {
+class _LoginSignUpScreenState extends State<LoginSignupScreen> {
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwardController = TextEditingController();
@@ -100,44 +99,44 @@ class _LoginSignUpScreenState extends State<LoginSignUpScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      // GestureDetector(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       isSignupScreen = false;
-                      //     });
-                      //   },
-                      //   child: Column(
-                      //     children: [
-                      //       Text(
-                      //         'LOGIN',
-                      //         style: TextStyle(
-                      //           fontSize: 16,
-                      //           fontWeight: FontWeight.bold,
-                      //           color: !isSignupScreen
-                      //               ? Colors.black
-                      //               : Colors.grey,
-                      //         ),
-                      //       ),
-                      //       if (!isSignupScreen)
-                      //         Container(
-                      //           margin: const EdgeInsets.only(top: 3),
-                      //           height: 2,
-                      //           width: 55,
-                      //           color: Colors.orange,
-                      //         ),
-                      //     ],
-                      //   ),
-                      // ),
-                      // GestureDetector(
-                      //   onTap: () {
-                      //     setState(() {
-                      //       isSignupScreen = true;
-                      //     });
-                      //   },
-                      Column(
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            isSignupScreen = false;
+                          });
+                        },
+                        child: Column(
+                          children: [
+                            Text(
+                              'LOGIN',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: !isSignupScreen
+                                    ? Colors.black
+                                    : Colors.grey,
+                              ),
+                            ),
+                            if (!isSignupScreen)
+                              Container(
+                                margin: const EdgeInsets.only(top: 3),
+                                height: 2,
+                                width: 55,
+                                color: Colors.orange,
+                              ),
+                          ],
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            isSignupScreen = true;
+                          });
+                        },
+                      child: Column(
                         children: [
                           Text(
-                            'SIGNUP',
+                            'SIGNIN',
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -154,7 +153,7 @@ class _LoginSignUpScreenState extends State<LoginSignUpScreen> {
                             ),
                         ],
                       ),
-                      // ),
+                       ),
                     ],
                   ),
                   if (isSignupScreen) buildSignUpSection(),
@@ -403,10 +402,10 @@ class _LoginSignUpScreenState extends State<LoginSignUpScreen> {
     if (name.isEmpty || email.isEmpty || password.isEmpty) {
       return;
     }    
-   print("$name$email$password");
+   ("$name$email$password");
     final login = LoginModal(name: name, password: password, email: email);
     addLogin(login);   
-    print(login); 
+    (login); 
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (ctx1) => HomePage(),

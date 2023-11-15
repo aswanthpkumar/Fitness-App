@@ -1,9 +1,8 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/GymYogaWorkout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/CatCowPose.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/ChildsPose.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/CounterclockwiseSholderRolls.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/CrescentLowLungeRight.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/SeatedSideBendLeft.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/SeatedSideBendRight.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/SeatedSpinalTwistLeft.dart';
@@ -105,7 +104,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 100,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Counterclockwise Sholder Rolls',
@@ -120,7 +118,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 0,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Side-to-side Turns',
@@ -135,7 +132,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Up and Down Nods',
@@ -150,7 +146,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Seated Spinal Twist Left',
@@ -165,7 +160,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Seated Spinal Twist Right',
@@ -180,7 +174,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Seated Side Bend Left',
@@ -195,7 +188,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00.20',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Seated Side Bend Right',
@@ -210,7 +202,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Cat Cow Pose',
@@ -225,7 +216,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:40',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: "Child's Pose",
@@ -240,7 +230,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Walk The Dog',
@@ -255,7 +244,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Creacent Low Louge Left',
@@ -270,7 +258,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             // );
                           },
                           workOutTIme: '00:30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Cobra Stretch',
@@ -285,7 +272,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             // );
                           },
                           workOutTIme: '00.30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Walk The Dog',
@@ -300,7 +286,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00.30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Crescent Low Lunge Right',
@@ -315,7 +300,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00.30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Half Forward Bend',
@@ -330,7 +314,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00.30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Standing Back Stretches',
@@ -345,7 +328,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00.30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Head Tilt',
@@ -360,7 +342,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00.30',
-                          space: 150,
                         ),
                         GymYogaWorkout(
                           workOutName: 'Warrior I Left',
@@ -375,7 +356,6 @@ class EaseYogaforBeginners extends StatelessWidget {
                             );
                           },
                           workOutTIme: '00:20',
-                          space: 150,
                         ),
                       ],
                     ),

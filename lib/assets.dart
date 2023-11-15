@@ -26,6 +26,7 @@ String image1 = 'assets/Photos/image_1.webp';
 String image2 = 'assets/Photos/image_2.jpg';
 String image3 = 'assets/Photos/image_3.jpg';
 String settingspageimage = 'assets/Photos/settingspageimage.jpeg';
+String girlwithdumbbell='assets/Photos/girlinagym.jpeg';
 
 // gym workout page text ABS BEGINNING
 String jumpingjackstext1 =

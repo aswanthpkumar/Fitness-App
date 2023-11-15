@@ -1,12 +1,16 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/home.dart';
+import 'package:demo_project/pages/homeScreen/workouts/arm/arm.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/chest.dart';
+import 'package:demo_project/pages/homeScreen/workouts/leg/leg.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section.dart';
-import 'package:demo_project/pages/homeScreen/workouts/abs%20beginner/absbeginner.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/abs.dart';
+import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/sholderandback.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
 class Gym extends StatelessWidget {
-  Gym({super.key});
+  const Gym ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +67,7 @@ class Gym extends StatelessWidget {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (ctx) {
-                          return const AbsBeginner();
+                          return const Abs();
                         },
                       ),
                     );
@@ -72,22 +76,54 @@ class Gym extends StatelessWidget {
                 Section(
                   img: complexlowerbody,
                   text: 'Chest',
-                  ontap: () {},
+                  ontap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (ctx) {
+                          return const Chest();
+                        },
+                      ),
+                    );
+                  },
                 ),
                 Section(
                   img: powerjumps,
                   text: 'Arm',
-                  ontap: () {},
+                  ontap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (ctx) {
+                          return const Arm();
+                        },
+                      ),
+                    );
+                  },
                 ),
                 Section(
                   img: amazingbutt,
                   text: 'Leg',
-                  ontap: () {},
+                  ontap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (ctx) {
+                          return const Leg();
+                        },
+                      ),
+                    );
+                  },
                 ),
                 Section(
                   img: upperbody,
                   text: 'Sholder and Back',
-                  ontap: () {},
+                  ontap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (ctx) {
+                          return const SholderandBack();
+                        },
+                      ),
+                    );
+                  },
                 ),
               ],
             ),

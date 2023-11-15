@@ -1,5 +1,4 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/section.dart';
 import 'package:flutter/material.dart';
 
 class Warmup extends StatelessWidget {

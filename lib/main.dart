@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'db/model/date_modal.dart';
 
+// ignore: constant_identifier_names
 const SAVE_VALUE= 'UserLoggedIn';
 
 Future<void> main(List<String> args)async {

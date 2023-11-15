@@ -1,12 +1,11 @@
-import 'package:demo_project/assets.dart';
 import 'package:flutter/material.dart';
 
-class Food_Category extends StatelessWidget {
+class FoodCategory extends StatelessWidget {
   final VoidCallback onTap;
-  final meals;
-  final img;
-  final color;
-  const Food_Category(
+  final String meals;
+  final String img;
+  final Color color;
+  const FoodCategory(
       {super.key,
       required this.meals,
       required this.img,

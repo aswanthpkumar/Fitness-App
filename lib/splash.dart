@@ -1,8 +1,9 @@
 import 'package:demo_project/home.dart';
 import 'package:demo_project/main.dart';
+
+import 'package:demo_project/pages/ui_pages/page_1.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'logIn/logInScreen.dart';
 
 class ScreenSplash extends StatefulWidget {
   const ScreenSplash({super.key});
@@ -15,14 +16,13 @@ class _ScreenSplashState extends State<ScreenSplash> {
   // once call cheyunath 'initstate'
   @override
   void initState() {
-    // TODO: implement initState]
+    
     checkLoggIn();
     super.initState();
   }
 
   @override
   void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
     super.didChangeDependencies();
   }
 
@@ -47,17 +47,18 @@ class _ScreenSplashState extends State<ScreenSplash> {
     // ignore: use_build_context_synchronously
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (ctx) => const LoginSignUpScreen(),
+        builder: (ctx) => const Page1(),
       ),
     );
   }
 
   Future<void> checkLoggIn() async {
-    final _sharedPrefs = await SharedPreferences.getInstance();
-    final _userLog = _sharedPrefs.getBool(SAVE_VALUE);
-    if (_userLog == null || _userLog == false) {
+    final sharedPrefs = await SharedPreferences.getInstance();
+    final userLog = sharedPrefs.getBool(SAVE_VALUE);
+    if (userLog == null || userLog == false) {
       gotoLogin();
     } else {
+      // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (ctx1) => HomePage(),

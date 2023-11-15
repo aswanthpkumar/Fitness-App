@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Card_1 extends StatelessWidget {
+class Card1 extends StatelessWidget {
   final Color colors;
   final String name;
   final VoidCallback ontap;
-  const Card_1({super.key, required this.colors, required this.name, required this.ontap});
+  const Card1({super.key, required this.colors, required this.name, required this.ontap});
 
   @override
   Widget build(BuildContext context) {

@@ -1,9 +1,17 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/home.dart';
+import 'package:demo_project/pages/homeScreen/yoga/armsWokout/armsWorkout.dart';
+import 'package:demo_project/pages/homeScreen/yoga/beginnerCoreWorkout/beginnerInnerThighToning.dart';
 import 'package:demo_project/pages/homeScreen/yoga/card1.dart';
 import 'package:demo_project/pages/homeScreen/yoga/card2.dart';
 import 'package:demo_project/pages/homeScreen/yoga/card3.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/easeYogaforBeignners.dart';
+import 'package:demo_project/pages/homeScreen/yoga/eveningYogaFlow/eveningYogaFlow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/kidsYoga/kidsYoga.dart';
+import 'package:demo_project/pages/homeScreen/yoga/legWorkout/legWorkout.dart';
+import 'package:demo_project/pages/homeScreen/yoga/morningYogaFlow/morningYogaFlow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/only4MovesforAbs/only4MovesforAbs.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sunSolutationsFlow.dart';
 import 'package:flutter/material.dart';
 
 class Yoga extends StatelessWidget {
@@ -60,7 +68,7 @@ class Yoga extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Card_1(
+              Card1(
                 colors: Colors.amber.shade100,
                 name: 'Ease Yoga for\nbeginners',
                 ontap: () {
@@ -73,32 +81,56 @@ class Yoga extends StatelessWidget {
                   );
                 },
               ),
-              Card_1(
+              Card1(
                 name: 'Sun solutations\nflow',
                 colors: Colors.amberAccent.shade100,
-                ontap: () {},
+                ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const Sun_Solutations_Flow();
+                      },
+                    ),
+                  );},
               ),
             ],
           ),
           const SizedBox(height: 5),
-          Card_2(
+          Card2(
             colors: Colors.yellow.shade100,
             name: 'Kids yoga',
-            ontap: () {},
+            ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const Kids_Yoga();
+                      },
+                    ),
+                  );},
           ),
           const SizedBox(height: 5),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Card_3(
+              Card3(
                 colors: Colors.yellow.shade300,
                 name: 'Morning Yoga\nflow',
-                ontap: () {},
+                ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const Morning_Yoga_Flow();
+                      },
+                    ),
+                  );},
               ),
-              Card_3(
+              Card3(
                 colors: Colors.greenAccent.shade200,
                 name: 'Evening Yoga\nflow',
-                ontap: () {},
+                ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const Evening_Yoga_Flow();
+                      },
+                    ),
+                  );},
               ),
             ],
           ),
@@ -106,37 +138,67 @@ class Yoga extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Card_3(
+              Card3(
                 colors: Colors.cyanAccent.shade100,
                 name: 'Arms\nwokout',
-                ontap: () {},
+                ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const ArmsWorkout();
+                      },
+                    ),
+                  );},
               ),
-              Card_3(
+              Card3(
                 colors: Colors.yellowAccent.shade100,
                 name: 'Beginner inner\nthigh toning',
-                ontap: () {},
+                ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const BeginnerInnerThighToning();
+                      },
+                    ),
+                  );},
               )
             ],
           ),
           const SizedBox(height: 5),
-          Card_2(
+          Card2(
             colors: Colors.blueAccent.shade100,
             name: 'Leg workout',
-            ontap: () {},
+            ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const LegWorkout();
+                      },
+                    ),
+                  );},
           ),
           const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Card_3(
+              Card3(
                 colors: Colors.limeAccent.shade100,
                 name: 'Only 4 moves\nfor abs',
-                ontap: () {},
+                ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const Only_4_Moves_Abs();
+                      },
+                    ),
+                  );},
               ),
-              Card_3(
+              Card3(
                 colors: Colors.yellowAccent.shade100,
                 name: 'Beginner core\nworkout',
-                ontap: () {},
+                ontap: () {Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) {
+                        return const BeginnerInnerThighToning();
+                      },
+                    ),
+                  );},
               ),
             ],
           ),

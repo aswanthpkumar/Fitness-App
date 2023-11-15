@@ -11,7 +11,7 @@ import 'package:demo_project/widgets/FoodScreen/card.dart';
 import 'package:flutter/material.dart';
 
 class ScreenFood extends StatelessWidget {
-  ScreenFood({super.key});
+  const ScreenFood({super.key});
 
   // Widget thinDivider = const Divider(
   //   thickness: 5,
@@ -42,7 +42,7 @@ class ScreenFood extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Food_Category(
+                FoodCategory(
                   meals: 'BreakFast',
                   img: breakfast,
                   onTap: () {
@@ -55,7 +55,7 @@ class ScreenFood extends StatelessWidget {
                     );
                   }, color: Colors.amber.shade100,
                 ),
-                Food_Category(
+                FoodCategory(
                   meals: 'Lunch',
                   img: lunch,
                   onTap: () {
@@ -74,7 +74,7 @@ class ScreenFood extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Food_Category(
+                FoodCategory(
                   meals: 'Scacks',
                   img: snacks,
                   onTap: () {
@@ -87,7 +87,7 @@ class ScreenFood extends StatelessWidget {
                     );
                   }, color: Colors.lightBlueAccent.shade100,
                 ),
-                Food_Category(
+                FoodCategory(
                   meals: 'Sugarfree',
                   img: sugarfree,
                   onTap: () {
@@ -106,7 +106,7 @@ class ScreenFood extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Food_Category(
+                FoodCategory(
                   meals: 'Soup',
                   img: soup,
                   onTap: () {
@@ -119,7 +119,7 @@ class ScreenFood extends StatelessWidget {
                     );
                   }, color: Colors.greenAccent.shade200,
                 ),
-                Food_Category(
+                FoodCategory(
                   meals: 'Vegitarian',
                   img: veg,
                   onTap: () {
@@ -138,7 +138,7 @@ class ScreenFood extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Food_Category(
+                FoodCategory(
                   meals: 'Salad',
                   img: salad,
                   onTap: () {
@@ -151,7 +151,7 @@ class ScreenFood extends StatelessWidget {
                     );
                   }, color: Colors.blueAccent.shade100,
                 ),
-                Food_Category(
+                FoodCategory(
                   meals: 'Dinner',
                   img: dinner,
                   onTap: () {

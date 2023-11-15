@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class Section extends StatelessWidget {
   final VoidCallback ontap;
-  final img;
-  final text;
+  final String img;
+  final String text;
   const Section(
       {super.key, required this.img, required this.text, required this.ontap});
 

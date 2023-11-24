@@ -1,14 +1,14 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
-class Sun_Solutations_Flow extends StatelessWidget {
-  const Sun_Solutations_Flow({super.key});
+class MorningYogaFlow extends StatelessWidget {
+  const MorningYogaFlow({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       body: ListView(
         children: [
           Stack(

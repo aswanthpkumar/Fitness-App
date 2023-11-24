@@ -1,5 +1,5 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/pages/homeScreen/workouts/arm/arams_raises.dart';
 import 'package:demo_project/pages/homeScreen/workouts/arm/arm_clockwise.dart';
 import 'package:demo_project/pages/homeScreen/workouts/arm/arm_counterclockwise.dart';

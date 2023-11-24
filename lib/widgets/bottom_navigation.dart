@@ -1,5 +1,4 @@
-
-import 'package:demo_project/home.dart';
+import 'package:demo_project/home/home.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigaion extends StatelessWidget {

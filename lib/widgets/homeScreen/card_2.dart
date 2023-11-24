@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class CardSection2 extends StatelessWidget {
   const CardSection2({super.key, required this.image});
-  // ignore: prefer_typing_uninitialized_variables
-  final image;
+  
+  final String image;
   @override
   Widget build(BuildContext context) {
     return Padding(

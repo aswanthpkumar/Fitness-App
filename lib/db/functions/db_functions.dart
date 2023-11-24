@@ -19,6 +19,20 @@ Future<void> addLogin(LoginModal value) async {
   loginListNotifier.notifyListeners(); 
   (value.toString());
 }
+
+ValueNotifier<List<DataModel>> dataListNotifier = ValueNotifier([]);
+// add cheyan
+Future<void> addData(DataModel values) async {
+
+  final dataDB = await Hive.openBox<DataModel>('data_db');
+  await dataDB.add(values);
+  dataListNotifier.value.add(values);
+  // ignore: invalid_use_of_visible_for_testing_member
+  dataListNotifier.notifyListeners(); 
+  (values.toString());
+}
+
+
 Future<void> getAllData()async{
   final loginDB = await Hive.openBox<LoginModal>('login_db');
   loginListNotifier.value.clear();

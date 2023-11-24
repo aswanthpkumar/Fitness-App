@@ -1,14 +1,13 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/db/functions/db_functions.dart';
 import 'package:demo_project/db/model/date_modal.dart';
-import 'package:demo_project/home.dart';
+import 'package:demo_project/home/home.dart';
 import 'package:demo_project/main.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginSignupScreen extends StatefulWidget {
   const LoginSignupScreen({super.key});
-  
 
   @override
   State<LoginSignupScreen> createState() => _LoginSignUpScreenState();
@@ -18,13 +17,13 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwardController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
   bool isMale = true;
   bool isSignupScreen = true;
   bool isRememberMe = false;
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       backgroundColor: Colors.white54,
       body: Stack(
@@ -133,31 +132,31 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
                             isSignupScreen = true;
                           });
                         },
-                      child: Column(
-                        children: [
-                          Text(
-                            'SIGNIN',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color:
-                                  isSignupScreen ? Colors.black : Colors.grey,
+                        child: Column(
+                          children: [
+                            Text(
+                              'SIGNIN',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color:
+                                    isSignupScreen ? Colors.black : Colors.grey,
+                              ),
                             ),
-                          ),
-                          if (isSignupScreen)
-                            Container(
-                              margin: const EdgeInsets.only(top: 3),
-                              height: 2,
-                              width: 55,
-                              color: Colors.orange,
-                            ),
-                        ],
+                            if (isSignupScreen)
+                              Container(
+                                margin: const EdgeInsets.only(top: 3),
+                                height: 2,
+                                width: 55,
+                                color: Colors.orange,
+                              ),
+                          ],
+                        ),
                       ),
-                       ),
                     ],
                   ),
                   if (isSignupScreen) buildSignUpSection(),
-                  // if (!isSignupScreen) buildSignInSection(),
+                  if (!isSignupScreen) buildLogInSection(),
                 ],
               ),
             ),
@@ -202,15 +201,14 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
                     onPressed: () {
                       addAction();
                       logInData(context);
-                    //   final data = LoginModal(email: emailController.text,name: nameController.text,password: passwardController.text,);
-                    //   final box=Boxes.getdata();
-                    //   box.add(data);
-                    //  data.save();
-                    //  print(box);
-                    //  emailController.clear();
-                    //  nameController.clear();
-                    //  passwardController.clear();
-                      
+                      //   final data = LoginModal(email: emailController.text,name: nameController.text,password: passwardController.text,);
+                      //   final box=Boxes.getdata();
+                      //   box.add(data);
+                      //  data.save();
+                      //  print(box);
+                      //  emailController.clear();
+                      //  nameController.clear();
+                      //  passwardController.clear();
                     },
                   ),
                 ),
@@ -222,143 +220,147 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
     );
   }
 
-  // Container buildSignInSection() {
-  //   return Container(
-  //     margin: const EdgeInsets.only(top: 20),
-  //     child: Column(
-  //       children: [
-  //         buildTextField(Icons.email_outlined, 'info@gmail.com', false, true),
-  //         buildTextField(Icons.lock, '******', true, false),
-  //         Row(
-  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //           children: [
-  //             Row(
-  //               children: [
-  //                 Checkbox(
-  //                     value: isRememberMe,
-  //                     activeColor: Colors.grey[400],
-  //                     onChanged: (value) {
-  //                       setState(() {
-  //                         isRememberMe = !isRememberMe;
-  //                       });
-  //                     }),
-  //                 Text(
-  //                   'Remember me',
-  //                   style: TextStyle(
-  //                     fontSize: 12,
-  //                     color: Colors.grey.shade400,
-  //                   ),
-  //                 ),
-  //               ],
-  //             ),
-  //             TextButton(
-  //                 onPressed: () {},
-  //                 child: Text(
-  //                   'Forgot Passward?',
-  //                   style: TextStyle(
-  //                     fontSize: 12,
-  //                     color: Colors.grey.shade400,
-  //                   ),
-  //                 ))
-  //           ],
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
+  Container buildLogInSection() {
+    return Container(
+      margin: const EdgeInsets.only(top: 20),
+      child: Column(
+        children: [
+          buildTextField(Icons.person, 'username', false, true, nameController),
+          buildTextField(
+              Icons.lock, 'password', true, false, passwardController),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Checkbox(
+                      value: isRememberMe,
+                      activeColor: Colors.grey[400],
+                      onChanged: (value) {
+                        setState(() {
+                          isRememberMe = !isRememberMe;
+                        });
+                      }),
+                  Text(
+                    'Remember me',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey.shade400,
+                    ),
+                  ),
+                ],
+              ),
+              TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Forgot Passward?',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.grey.shade400,
+                    ),
+                  ))
+            ],
+          ),
+        ],
+      ),
+    );
+  }
 
   Container buildSignUpSection() {
     return Container(
       margin: const EdgeInsets.only(top: 20),
       child: Column(
         children: [
-          buildTextField(Icons.person, 'User Name', false, false,
-              nameController),
-          buildTextField(Icons.email_outlined, 'email', false, true,
-              emailController),
-          buildTextField(Icons.person, 'password', true, false,
+          buildTextField(
+              Icons.person, 'User Name', false, false, nameController),
+          buildTextField(
+              Icons.email_outlined, 'Email', false, true, emailController),
+          buildTextField(Icons.password_outlined, 'Password', true, false,
               passwardController),
-          Padding(
-            padding: const EdgeInsets.only(top: 10, left: 10),
-            child: Row(
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      isMale = true;
-                    });
-                  },
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 30,
-                        height: 30,
-                        margin: const EdgeInsets.only(right: 8.0),
-                        decoration: BoxDecoration(
-                          color: isMale ? Colors.grey : Colors.transparent,
-                          border: Border.all(
-                            width: 1,
-                            color: isMale ? Colors.transparent : Colors.grey,
-                          ),
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: Icon(Icons.account_circle,
-                            color: isMale ? Colors.white : Colors.grey[400]),
-                      ),
-                      Text(
-                        'Male',
-                        style: TextStyle(color: Colors.grey[400]),
-                      )
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 30),
-                GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      isMale = false;
-                    });
-                  },
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 30,
-                        height: 30,
-                        margin: const EdgeInsets.only(right: 8.0),
-                        decoration: BoxDecoration(
-                            color: isMale ? Colors.transparent : Colors.grey,
-                            border: Border.all(
-                              width: 1,
-                              color: isMale ? Colors.grey : Colors.transparent,
-                            ),
-                            borderRadius: BorderRadius.circular(15)),
-                        child: Icon(Icons.account_circle,
-                            color: isMale ? Colors.grey : Colors.white),
-                      ),
-                      Text(
-                        'Female',
-                        style: TextStyle(color: Colors.grey[400]),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          buildTextField(Icons.password_outlined, 'Confirm Password', true,
+              false, confirmPasswordController),
+          // Padding(
+          //   padding: const EdgeInsets.only(top: 10, left: 10),
+          //   child: Row(
+          //     children: [
+          //       GestureDetector(
+          //         onTap: () {
+          //           setState(() {
+          //             isMale = true;
+          //           });
+          //         },
+          //         child: Row(
+          //           children: [
+          //             Container(
+          //               width: 30,
+          //               height: 30,
+          //               margin: const EdgeInsets.only(right: 8.0),
+          //               decoration: BoxDecoration(
+          //                 color: isMale ? Colors.grey : Colors.transparent,
+          //                 border: Border.all(
+          //                   width: 1,
+          //                   color: isMale ? Colors.transparent : Colors.grey,
+          //                 ),
+          //                 borderRadius: BorderRadius.circular(15),
+          //               ),
+          //               child: Icon(Icons.account_circle,
+          //                   color: isMale ? Colors.white : Colors.grey[400]),
+          //             ),
+          //             Text(
+          //               'Male',
+          //               style: TextStyle(color: Colors.grey[400]),
+          //             )
+          //           ],
+          //         ),
+          //       ),
+          //       const SizedBox(width: 30),
+          //       GestureDetector(
+          //         onTap: () {
+          //           setState(() {
+          //             isMale = false;
+          //           });
+          //         },
+          //         child: Row(
+          //           children: [
+          //             Container(
+          //               width: 30,
+          //               height: 30,
+          //               margin: const EdgeInsets.only(right: 8.0),
+          //               decoration: BoxDecoration(
+          //                   color: isMale ? Colors.transparent : Colors.grey,
+          //                   border: Border.all(
+          //                     width: 1,
+          //                     color: isMale ? Colors.grey : Colors.transparent,
+          //                   ),
+          //                   borderRadius: BorderRadius.circular(15)),
+          //               child: Icon(Icons.account_circle,
+          //                   color: isMale ? Colors.grey : Colors.white),
+          //             ),
+          //             Text(
+          //               'Female',
+          //               style: TextStyle(color: Colors.grey[400]),
+          //             )
+          //           ],
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
           Container(
             width: 200,
             margin: const EdgeInsets.only(top: 20),
             child: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
-                  text: "By pressing 'Submit' you agree to our ",
-                  style: TextStyle(color: Colors.grey[400]),
-                  children: const [
-                    TextSpan(
-                        // recognizer: ,
-                        text: 'terms & conditions',
-                        style: TextStyle(color: Colors.orange))
-                  ],),
+                text: "By pressing 'Submit' you agree to our ",
+                style: TextStyle(color: Colors.grey[400]),
+                children: const [
+                  TextSpan(
+                      // recognizer: ,
+                      text: 'terms & conditions',
+                      style: TextStyle(color: Colors.orange))
+                ],
+              ),
             ),
           ),
         ],
@@ -399,23 +401,31 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
     final name = nameController.text.trim();
     final email = emailController.text.trim();
     final password = passwardController.text.trim();
-    if (name.isEmpty || email.isEmpty || password.isEmpty) {
+    final confirmpassword = confirmPasswordController.text.trim();
+    if (name.isEmpty ||
+        email.isEmpty ||
+        password.isEmpty ||
+        confirmpassword.isEmpty ||
+        password != confirmpassword) {
       return;
-    }    
-   ("$name$email$password");
-    final login = LoginModal(name: name, password: password, email: email);
-    addLogin(login);   
-    (login); 
+    }
+    ("$name$email$password");
+    final login = LoginModal(
+      name: name,
+      password: password,
+      email: email,
+    );
+    addLogin(login);
+    (login);
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (ctx1) => HomePage(),
       ),
     );
-  
   }
 
-  Future <void> logInData(BuildContext context)async{
+  Future<void> logInData(BuildContext context) async {
     final sharedPrefs = await SharedPreferences.getInstance();
-      await sharedPrefs.setBool(SAVE_VALUE, true);
+    await sharedPrefs.setBool(saveValue, true);
   }
 }

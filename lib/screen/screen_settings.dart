@@ -1,4 +1,5 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/section/settingsScreen/profile/personal_data.dart';
 import 'package:demo_project/section/settingsScreen/profile/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -80,17 +81,17 @@ class ScreenSettings extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(height: 20,),
+                    const SizedBox(height: 20,),
                     GestureDetector(
-                      // onTap: () {
-                      //   Navigator.of(context).push(
-                      //     MaterialPageRoute(
-                      //       builder: (ctx) {
-                      //         return const Profile();
-                      //       },
-                      //     ),
-                      //   );
-                      // },
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (ctx) {
+                              return const PersonalData();
+                            },
+                          ),
+                        );
+                      },
                       child: const Row(
                         children: [
                           Icon(Icons.person_4_outlined),

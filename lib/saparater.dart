@@ -1,8 +1,10 @@
+
+
 import 'package:flutter/material.dart';
 
 class Saparater extends StatelessWidget {
-  final size;
-  final text;
+  final double size;
+  final String text;
   const Saparater({super.key, required this.text, required this.size,});
 
   @override

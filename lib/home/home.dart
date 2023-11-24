@@ -1,7 +1,7 @@
 import 'package:demo_project/screen/screen_home.dart';
 import 'package:demo_project/screen/screen_settings.dart';
 import 'package:demo_project/screen/screen_food.dart';
-import 'package:demo_project/bottomNavigation.dart';
+import 'package:demo_project/widgets/bottom_navigation.dart';
 
 import 'package:flutter/material.dart';
 

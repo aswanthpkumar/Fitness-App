@@ -45,7 +45,7 @@ class GymYogaWorkout extends StatelessWidget {
                       ],
                     )),
                 Padding(
-                  padding:  EdgeInsets.only(right: 25),
+                  padding:  const EdgeInsets.only(right: 25),
                   child: Image(
                     alignment: Alignment.center,
                     height: 100,

@@ -1,19 +1,49 @@
-import 'package:demo_project/splash.dart';
+import 'package:demo_project/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'db/model/date_modal.dart';
 
-// ignore: constant_identifier_names
-const SAVE_VALUE= 'UserLoggedIn';
 
-Future<void> main(List<String> args)async {
+const saveValue = 'UserLoggedIn';
+const dataValue = 'Data';
+
+Future<void> main(List<String> args) async {
   await Hive.initFlutter();
-if(!Hive.isAdapterRegistered(LoginModalAdapter().typeId)){
-Hive.registerAdapter(LoginModalAdapter());
-  await Hive.openBox<LoginModal>('login_db');
-}
+  if (!Hive.isAdapterRegistered(LoginModalAdapter().typeId)) {
+    Hive.registerAdapter(LoginModalAdapter());
+    await Hive.openBox<LoginModal>('login_db');
+
+
+    if (!Hive.isAdapterRegistered(DataModelAdapter().typeId)) {
+      Hive.registerAdapter(DataModelAdapter());
+      await Hive.openBox<DataModel>('data_db');
+    }
+  }
+
   runApp(const MyApp());
 }
+
+// int? isviewed;
+// Future<void> main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   var directory = await getApplicationDocumentsDirectory();
+
+//   Hive.init(directory.path);
+
+//   Hive.registerAdapter(LoginModalAdapter());
+//   await Hive.openBox<LoginModal>('login_db');
+
+//   Hive.registerAdapter(DataModelAdapter());
+//   await Hive.openBox<DataModel>('data_db');
+
+//   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+//     statusBarColor: Colors.transparent,
+//   ));
+//   // SharedPreferences prefs = await SharedPreferences.getInstance();
+//   // isviewed = prefs.getInt('UserLoggedIn');
+
+//   runApp(const MyApp());
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -21,15 +51,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return    MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Demo Project',
-       theme: ThemeData(
+      theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: const ScreenSplash(),
     );
   }
 }
-
-

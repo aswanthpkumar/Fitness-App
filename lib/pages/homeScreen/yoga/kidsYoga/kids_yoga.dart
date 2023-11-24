@@ -1,14 +1,14 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
-class Only_4_Moves_Abs extends StatelessWidget {
-  const Only_4_Moves_Abs({super.key});
+class KidsYoga extends StatelessWidget {
+  const KidsYoga({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: ListView(
         children: [
           Stack(
@@ -79,7 +79,7 @@ class Only_4_Moves_Abs extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(height: 10),
-                        const Saparater(text: '16 mins Beginner', size: 20),
+                        const Saparater(text: '16 mins Beginner', size: 20.0),
                         GymYogaWorkout(
                           workOutName: 'Clockwise Sholder Rolls',
                           workOutImage: powerjumps,

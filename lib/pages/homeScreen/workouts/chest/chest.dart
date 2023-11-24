@@ -1,12 +1,12 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/chest_stretch.dart';
-import 'package:demo_project/pages/homeScreen/workouts/chest/cobra_Stretch.dart';
-import 'package:demo_project/pages/homeScreen/workouts/chest/incline_push-ups.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/cobra_stretch.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/incline_push_ups.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/jumping_jacks.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/knee_pushups.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/push_ups.dart';
-import 'package:demo_project/pages/homeScreen/workouts/chest/triceps_Dips.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/triceps_dips.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/wide_arm_pushups.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';

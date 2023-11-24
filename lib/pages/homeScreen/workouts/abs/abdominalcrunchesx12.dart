@@ -1,7 +1,7 @@
 
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/plank20.dart';
-import 'package:demo_project/pages/homeScreen/workouts/abs/russiantwistx32.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist_x_32.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
 import 'package:flutter/material.dart';
 

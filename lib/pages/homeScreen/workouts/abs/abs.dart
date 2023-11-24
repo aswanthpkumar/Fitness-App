@@ -1,6 +1,6 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
-import 'package:demo_project/pages/homeScreen/workouts/abs/Abdominal_Crunchesx16.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/abdominal_crunches_x_16.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/abdominalcrunchesx12.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/cobrastretch30.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/healstouchx20_2.dart';
@@ -12,8 +12,8 @@ import 'package:demo_project/pages/homeScreen/workouts/abs/mountainclimber.dart'
 import 'package:demo_project/pages/homeScreen/workouts/abs/mountainerclimberx12.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/plank20.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/plank_30.dart';
-import 'package:demo_project/pages/homeScreen/workouts/abs/russianTwist.dart';
-import 'package:demo_project/pages/homeScreen/workouts/abs/russiantwistx32.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist_x_32.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/spinlumbarleft.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/spinlumbarright.dart';
 import 'package:demo_project/saparater.dart';

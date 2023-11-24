@@ -1,10 +1,10 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
-class Morning_Yoga_Flow extends StatelessWidget {
-  const Morning_Yoga_Flow({super.key});
+class ArmsWorkout extends StatelessWidget {
+  const ArmsWorkout({super.key});
 
   @override
   Widget build(BuildContext context) {

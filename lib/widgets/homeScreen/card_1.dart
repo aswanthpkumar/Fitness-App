@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CardSection1 extends StatelessWidget {
-  final img;
-  final name;
+  final String img;
+  final String name;
   final VoidCallback onTap;
   const CardSection1({
     super.key,

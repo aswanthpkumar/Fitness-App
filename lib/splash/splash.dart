@@ -1,4 +1,4 @@
-import 'package:demo_project/home.dart';
+import 'package:demo_project/home/home.dart';
 import 'package:demo_project/main.dart';
 
 import 'package:demo_project/pages/ui_pages/page_1.dart';
@@ -54,14 +54,14 @@ class _ScreenSplashState extends State<ScreenSplash> {
 
   Future<void> checkLoggIn() async {
     final sharedPrefs = await SharedPreferences.getInstance();
-    final userLog = sharedPrefs.getBool(SAVE_VALUE);
+    final userLog = sharedPrefs.getBool(saveValue);
     if (userLog == null || userLog == false) {
       gotoLogin();
     } else {
       // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (ctx1) => HomePage(),
+          builder: (ctx1) =>  HomePage(),
         ),
       );
     }

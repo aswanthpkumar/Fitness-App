@@ -1,6 +1,6 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/heeltouchx20.dart';
-import 'package:demo_project/pages/homeScreen/workouts/abs/russianTwist.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
 import 'package:flutter/material.dart';
 

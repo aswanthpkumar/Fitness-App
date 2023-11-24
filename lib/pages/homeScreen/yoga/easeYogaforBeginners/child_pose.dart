@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ChildsPose  extends StatelessWidget {
-  const ChildsPose ({super.key});
+class ChildPose  extends StatelessWidget {
+  const ChildPose ({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import 'package:demo_project/pages/homeScreen/yoga/yoga.dart';
 import 'package:demo_project/widgets/homeScreen/dashboard.dart';
 import 'package:flutter/material.dart';
 import '../assets.dart';
-import '../widgets/homeScreen/card1.dart';
+import '../widgets/homeScreen/card_1.dart';
 
 class ScreenHome extends StatelessWidget {
   const ScreenHome({super.key});
@@ -16,8 +16,8 @@ class ScreenHome extends StatelessWidget {
         const Dashboard(),
         Row(
           children: [
-            Name(),
-            ProfileImage1(),
+            name(),
+            profileImage1(),
           ],
         ),
         const SizedBox(height: 10),
@@ -28,7 +28,7 @@ class ScreenHome extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (ctx) {
-                      return Gym();
+                      return const Gym();
                     },
                   ),
                 );
@@ -42,7 +42,7 @@ class ScreenHome extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (ctx) {
-                      return Yoga();
+                      return const Yoga();
                     },
                   ),
                 );
@@ -56,7 +56,7 @@ class ScreenHome extends StatelessWidget {
     );
   }
 
-  Widget ProfileImage1() {
+  Widget profileImage1() {
     return Padding(
       padding: const EdgeInsets.only(left: 55, top: 20),
       child: CircleAvatar(
@@ -66,7 +66,7 @@ class ScreenHome extends StatelessWidget {
     );
   }
 
-  Widget Name() {
+  Widget name() {
     return const Padding(
       padding: EdgeInsets.only(left: 10),
       child: Column(

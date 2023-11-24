@@ -1,5 +1,5 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/abs/Abdominal_Crunchesx16.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/abdominal_crunches_x_16.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
 import 'package:flutter/material.dart';
 

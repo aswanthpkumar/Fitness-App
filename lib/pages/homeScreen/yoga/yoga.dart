@@ -1,17 +1,17 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/home.dart';
-import 'package:demo_project/pages/homeScreen/yoga/armsWokout/armsWorkout.dart';
-import 'package:demo_project/pages/homeScreen/yoga/beginnerCoreWorkout/beginnerInnerThighToning.dart';
-import 'package:demo_project/pages/homeScreen/yoga/card1.dart';
-import 'package:demo_project/pages/homeScreen/yoga/card2.dart';
-import 'package:demo_project/pages/homeScreen/yoga/card3.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/easeYogaforBeignners.dart';
-import 'package:demo_project/pages/homeScreen/yoga/eveningYogaFlow/eveningYogaFlow.dart';
-import 'package:demo_project/pages/homeScreen/yoga/kidsYoga/kidsYoga.dart';
-import 'package:demo_project/pages/homeScreen/yoga/legWorkout/legWorkout.dart';
-import 'package:demo_project/pages/homeScreen/yoga/morningYogaFlow/morningYogaFlow.dart';
-import 'package:demo_project/pages/homeScreen/yoga/only4MovesforAbs/only4MovesforAbs.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sunSolutationsFlow.dart';
+import 'package:demo_project/home/home.dart';
+import 'package:demo_project/pages/homeScreen/yoga/armsWokout/arms_workout.dart';
+import 'package:demo_project/pages/homeScreen/yoga/beginnerCoreWorkout/beginner_innert_thigh_toning.dart';
+import 'package:demo_project/pages/homeScreen/yoga/card_1.dart';
+import 'package:demo_project/pages/homeScreen/yoga/card_2.dart';
+import 'package:demo_project/pages/homeScreen/yoga/card_3.dart';
+import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/ease_yoga_for_beignners.dart';
+import 'package:demo_project/pages/homeScreen/yoga/eveningYogaFlow/evening_yoga_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/kidsYoga/kids_yoga.dart';
+import 'package:demo_project/pages/homeScreen/yoga/legWorkout/leg_workout.dart';
+import 'package:demo_project/pages/homeScreen/yoga/morningYogaFlow/morning_yoga_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/only4MovesforAbs/only_4_movesfor_abs.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sun_solutations_flow.dart';
 import 'package:flutter/material.dart';
 
 class Yoga extends StatelessWidget {
@@ -87,7 +87,7 @@ class Yoga extends StatelessWidget {
                 ontap: () {Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
-                        return const Sun_Solutations_Flow();
+                        return const SunSolutationsFlow();
                       },
                     ),
                   );},
@@ -101,7 +101,7 @@ class Yoga extends StatelessWidget {
             ontap: () {Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
-                        return const Kids_Yoga();
+                        return const KidsYoga();
                       },
                     ),
                   );},
@@ -116,7 +116,7 @@ class Yoga extends StatelessWidget {
                 ontap: () {Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
-                        return const Morning_Yoga_Flow();
+                        return const MorningYogaFlow();
                       },
                     ),
                   );},
@@ -127,7 +127,7 @@ class Yoga extends StatelessWidget {
                 ontap: () {Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
-                        return const Evening_Yoga_Flow();
+                        return const EveningYogaFlow();
                       },
                     ),
                   );},
@@ -184,7 +184,7 @@ class Yoga extends StatelessWidget {
                 ontap: () {Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
-                        return const Only_4_Moves_Abs();
+                        return const Only4MovesAbs();
                       },
                     ),
                   );},

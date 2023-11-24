@@ -1,5 +1,5 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/backward_lunge.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/calf_stretch_left.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/calf_stretch_right.dart';

@@ -1,5 +1,5 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/arms_raises.dart';
 import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/arms_scissors.dart';
 import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/cat_cow_pose.dart';

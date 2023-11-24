@@ -1,5 +1,5 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/home.dart';
+import 'package:demo_project/home/home.dart';
 import 'package:demo_project/pages/homeScreen/workouts/arm/arm.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/chest.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/leg.dart';

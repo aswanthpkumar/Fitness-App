@@ -1,25 +1,14 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/homeScreen/workouts/Workout.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/CatCowPose.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/ChildsPose.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/CounterclockwiseSholderRolls.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/SeatedSideBendLeft.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/SeatedSideBendRight.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/SeatedSpinalTwistLeft.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/SeatedSpinalTwistRight.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/Side-to-sideTurns.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/UpandDownNods.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/WalkTheDog.dart';
-import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/clockWiseSholderRolls.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
-class EaseYogaforBeginners extends StatelessWidget {
-  const EaseYogaforBeginners({super.key});
+class EveningYogaFlow extends StatelessWidget {
+  const EveningYogaFlow({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       body: ListView(
         children: [
           Stack(
@@ -95,13 +84,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Clockwise Sholder Rolls',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ClcockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),
@@ -109,13 +98,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Counterclockwise Sholder Rolls',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const CounterclockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const CounterclockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),
@@ -123,13 +112,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Side-to-side Turns',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const SidetosideTurns();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const SidetosideTurns();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),
@@ -137,13 +126,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Up and Down Nods',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const UpandDownNods();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const UpandDownNods();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),
@@ -151,13 +140,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Seated Spinal Twist Left',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const SeatedSpinalTwistLeft();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const SeatedSpinalTwistLeft();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),
@@ -165,13 +154,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Seated Spinal Twist Right',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const SeatedSpinalTwistRight();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const SeatedSpinalTwistRight();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),
@@ -179,13 +168,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Seated Side Bend Left',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const SeatedSideBendLeft();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const SeatedSideBendLeft();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00.20',
                         ),
@@ -193,13 +182,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Seated Side Bend Right',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const SeatedSideBendRight();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const SeatedSideBendRight();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),
@@ -207,13 +196,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Cat Cow Pose',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const CatCowPose();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const CatCowPose();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:40',
                         ),
@@ -221,13 +210,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: "Child's Pose",
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ChildsPose();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ChildsPose();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:30',
                         ),
@@ -235,13 +224,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Walk The Dog',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const WalkTheDog();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const WalkTheDog();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:30',
                         ),
@@ -277,13 +266,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Walk The Dog',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ClcockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00.30',
                         ),
@@ -291,13 +280,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Crescent Low Lunge Right',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ClcockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00.30',
                         ),
@@ -305,13 +294,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Half Forward Bend',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ClcockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00.30',
                         ),
@@ -319,13 +308,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Standing Back Stretches',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ClcockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00.30',
                         ),
@@ -333,13 +322,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Head Tilt',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ClcockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00.30',
                         ),
@@ -347,13 +336,13 @@ class EaseYogaforBeginners extends StatelessWidget {
                           workOutName: 'Warrior I Left',
                           workOutImage: powerjumps,
                           onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
+                            // Navigator.of(context).push(
+                            //   MaterialPageRoute(
+                            //     builder: (ctx) {
+                            //       return const ClcockwiseSholderRolls();
+                            //     },
+                            //   ),
+                            // );
                           },
                           workOutTIme: '00:20',
                         ),

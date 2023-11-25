@@ -1,9 +1,7 @@
 import 'package:demo_project/db/functions/db_functions.dart';
 import 'package:demo_project/db/model/date_modal.dart';
 import 'package:demo_project/pages/logIn/login_screen.dart';
-import 'package:demo_project/main.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class HeightWeightAge extends StatefulWidget {
   const HeightWeightAge({super.key});
@@ -37,7 +35,7 @@ class _HeightWeightAgeState extends State<HeightWeightAge> {
                   child: TextButton(
                     onPressed: () {
                       addAction();
-                      personalData(context);
+                      // personalData(context);
                     },
                     child: const Text('Submit'),
                   ),
@@ -98,8 +96,8 @@ class _HeightWeightAgeState extends State<HeightWeightAge> {
         ),
       ); 
   }
-   Future<void> personalData(BuildContext context) async {
-    final sharedPrefs = await SharedPreferences.getInstance();
-    await sharedPrefs.setBool(dataValue, true);
-  }
+  //  Future<void> personalData(BuildContext context) async {
+  //   final sharedPrefs = await SharedPreferences.getInstance();
+  //   await sharedPrefs.setBool(dataValue, true);
+  // }
 }

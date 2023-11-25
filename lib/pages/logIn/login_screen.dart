@@ -21,6 +21,7 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
   bool isMale = true;
   bool isSignupScreen = true;
   bool isRememberMe = false;
+  bool isDataMatched = true;
 
   @override
   Widget build(BuildContext context) {
@@ -163,7 +164,7 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
           ),
           // Trick to add the submit button
           Positioned(
-            top: isSignupScreen ? 535 : 430,
+            top: isSignupScreen ? 545 : 430,
             left: 0,
             right: 0,
             child: Center(
@@ -201,6 +202,7 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
                     onPressed: () {
                       addAction();
                       logInData(context);
+                      showText();
                       //   final data = LoginModal(email: emailController.text,name: nameController.text,password: passwardController.text,);
                       //   final box=Boxes.getdata();
                       //   box.add(data);
@@ -346,23 +348,34 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
           //     ],
           //   ),
           // ),
-          Container(
-            width: 200,
-            margin: const EdgeInsets.only(top: 20),
-            child: RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-                text: "By pressing 'Submit' you agree to our ",
-                style: TextStyle(color: Colors.grey[400]),
-                children: const [
-                  TextSpan(
-                      // recognizer: ,
-                      text: 'terms & conditions',
-                      style: TextStyle(color: Colors.orange))
-                ],
+          Column(
+            children: [
+              Visibility(
+                visible: !isDataMatched,
+                child: const Text(
+                  "Password and Confirm Password din't match",
+                  style: TextStyle(color: Colors.red),
+                ),
               ),
-            ),
-          ),
+              Container(
+                width: 200,
+                margin: const EdgeInsets.only(top: 20),
+                child: RichText(
+                  textAlign: TextAlign.center,
+                  text: TextSpan(
+                    text: "By pressing 'Submit' you agree to our ",
+                    style: TextStyle(color: Colors.grey[400]),
+                    children: const [
+                      TextSpan(
+                          // recognizer: ,
+                          text: 'terms & conditions',
+                          style: TextStyle(color: Colors.orange))
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
@@ -393,6 +406,13 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
           hintText: hintText,
           hintStyle: TextStyle(fontSize: 14, color: Colors.grey[400]),
         ),
+        // validator: (_){
+        //    if(isDataMatched){
+        //     return null;
+        //    }else{
+        //     return 'error';
+        //    }
+        // },
       ),
     );
   }
@@ -408,20 +428,33 @@ class _LoginSignUpScreenState extends State<LoginSignupScreen> {
         confirmpassword.isEmpty ||
         password != confirmpassword) {
       return;
+    } else {
+      ("$name$email$password");
+      final login = LoginModal(
+        name: name,
+        password: password,
+        email: email,
+      );
+      addLogin(login);
+      (login);
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (ctx1) => HomePage(),
+        ),
+      );
     }
-    ("$name$email$password");
-    final login = LoginModal(
-      name: name,
-      password: password,
-      email: email,
-    );
-    addLogin(login);
-    (login);
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (ctx1) => HomePage(),
-      ),
-    );
+  }
+
+  void showText() {
+    final password1 = passwardController.text.trim();
+    final conformpassword1 = confirmPasswordController.text.trim();
+    if (password1 == conformpassword1) {
+      return;
+    } else {
+      setState(() {
+        isDataMatched = false;
+      });
+    }
   }
 
   Future<void> logInData(BuildContext context) async {

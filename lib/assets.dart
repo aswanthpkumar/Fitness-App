@@ -65,7 +65,17 @@ String spinlumbarlefttext1='Lie on your back with your legs extended.\nLift your
 String spinlumbarlefttext2='\nHold this position for a few seconds.';
 String spinlumbarrighttext1='Lie on your back with your legs extended.';
 String spinlumbarrighttext2='Lift your right leg up and use your left hand to pull your right knee to the left, but keep your other arm extended to the side on the floor\nHold this position for a few seconds.';
-
+String inclinepushupstext1='Start in the rigular push-up position but with your heands elevated on a chair or brench.\n\nThen push your body up down using your arm strength';
+String inclinepushupstext2='Remember to keep your body straight.';
+String pushupschesttext1='Lay prone on the ground with arms supporting your body.\n\nKeep your body staight while raising and lowering your body with your arms.';
+String pushupschesttext2='This exercise works the chest,shoulders,triceps,back and legs.';
+String cheststretchchesttext1='Find a doorway,take a luge position in the doorway with your arms on the doorframs and your elbows a little lower than your shoulders,then slowly bring your chest forward.';
+String cheststretchchesttext2="Hold this position for 30-40 seconds. Then shlowly come out of it,bring your arms down and do a couple of shouldr rolls.\n\nDon't pull your head forward,and keep your neck relaxed.";
+String kneepushstext1='Start in the regular push-up position,then let your knees touch the floor and raise your feet up off the floor.\n\nNext push your body up and down.';
+String tricepsdipstext1='For the start position,sit on the chair. Then move your hip off the chair with your hands holding the edgs of the chair.';
+String tricepsdipstext2='Slowly bend and stretch you arms to make our body go up and down. This is a great exercise for the triceps.';
+String widearmpushupstext1='Start in the regular push-ups position but with your hands spread wider than your shoulder.';
+String widearmpushupstext2='Then push your body up and down. Remember to keep your body straight.';
 
 // food page Images
 String breakfast = 'assets/Photos/foodpage/breakfast.png';

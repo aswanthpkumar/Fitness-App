@@ -1,3 +1,7 @@
+import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/push_ups.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/jumping_jacks.dart';
+import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
 import 'package:flutter/material.dart';
 
 class InclinePushups extends StatelessWidget {
@@ -5,6 +9,32 @@ class InclinePushups extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Section(
+        coverimage: powerjumps,
+        heading: 'Incline Push-Ups x10',
+        para1: inclinepushupstext1,
+        para2: inclinepushupstext2,
+        pagecount: '2/8',
+        ontapNext: (){
+           Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (ctx) {
+                  return const Pushups();
+                },
+              ),
+            );
+        },
+        ontapPrevious: (){
+           Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (ctx) {
+                  return const JumpingJacks();
+                },
+              ),
+            );
+        },
+      ),
+    );
   }
 }

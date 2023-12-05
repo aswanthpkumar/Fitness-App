@@ -31,6 +31,17 @@ Future<void> addData(DataModel values) async {
   dataListNotifier.notifyListeners(); 
   (values.toString());
 }
+ValueNotifier<List<NameModel>> nameListNotifier = ValueNotifier([]);
+// add cheyan
+Future<void> nameData(NameModel value) async {
+
+  final nameDB = await Hive.openBox<NameModel>('name_db');
+  await nameDB.add(value);
+  nameListNotifier.value.add(value);
+  // ignore: invalid_use_of_visible_for_testing_member
+  nameListNotifier.notifyListeners(); 
+  (value.toString());
+}
 
 
 Future<void> getAllData()async{

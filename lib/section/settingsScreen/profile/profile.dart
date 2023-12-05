@@ -36,10 +36,105 @@ class _ProfileState extends State<Profile> {
             itemCount: box.length,
             itemBuilder: (context, index) {
               return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Name: ${data[index].name.toString()}'),
-                  Text('Email: ${data[index].email.toString()}'),
-                  Text('Password: ${data[index].password.toString()}'),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 20, left: 15),
+                    child: Text(
+                      'Profile',
+                      style: TextStyle(fontSize: 70, color: Colors.grey),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.person_2,
+                          size: 40,
+                          color: Colors.blueGrey,
+                        ),
+                        const SizedBox(width: 25),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Name',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              data[index].name.toString(),
+                              style: const TextStyle(fontSize: 20),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.email,
+                          size: 40,
+                          color: Colors.blueGrey,
+                        ),
+                        const SizedBox(width: 25),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Email : ',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              data[index].email.toString(),
+                              style: const TextStyle(fontSize: 20),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25),
+                    child: Row(
+                      children: [
+                        const Icon(
+                          Icons.password,
+                          size: 40,
+                          color: Colors.blueGrey,
+                        ),
+                        const SizedBox(width: 25),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Password : ',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              data[index].password.toString(),
+                              style: const TextStyle(fontSize: 20),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               );
             },

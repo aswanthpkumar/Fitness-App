@@ -114,7 +114,7 @@ class Arm extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (ctx) {
-                                return const SideArmRaise();
+                                return const SideArmRaiseArm();
                               },
                             ),
                           );
@@ -174,7 +174,7 @@ class Arm extends StatelessWidget {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (ctx) {
-                                return const DimondPushups();
+                                return const DiamondPushups();
                               },
                             ),
                           );

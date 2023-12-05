@@ -1,5 +1,5 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/pages/ui_pages/height_weight_age.dart';
+import 'package:demo_project/pages/ui_pages/name.dart';
 import 'package:flutter/material.dart';
 
 
@@ -43,7 +43,7 @@ class Page1 extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (ctx) {
-                      return const HeightWeightAge();
+                      return const Name();
                     },
                   ),
                 );

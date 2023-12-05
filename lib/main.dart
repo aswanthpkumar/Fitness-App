@@ -1,23 +1,30 @@
+import 'package:demo_project/home/home.dart';
+import 'package:demo_project/pages/ui_pages/height_weight_age.dart';
+import 'package:demo_project/pages/ui_pages/name.dart';
 import 'package:demo_project/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'db/model/date_modal.dart';
-
 
 const saveValue = 'UserLoggedIn';
 const dataValue = 'Data';
 
 Future<void> main(List<String> args) async {
   await Hive.initFlutter();
+
   if (!Hive.isAdapterRegistered(LoginModalAdapter().typeId)) {
     Hive.registerAdapter(LoginModalAdapter());
     await Hive.openBox<LoginModal>('login_db');
+  }
 
+  if (!Hive.isAdapterRegistered(DataModelAdapter().typeId)) {
+    Hive.registerAdapter(DataModelAdapter());
+    await Hive.openBox<DataModel>('data_db');
+  }
 
-    if (!Hive.isAdapterRegistered(DataModelAdapter().typeId)) {
-      Hive.registerAdapter(DataModelAdapter());
-      await Hive.openBox<DataModel>('data_db');
-    }
+  if (!Hive.isAdapterRegistered(NameModelAdapter().typeId)) {
+    Hive.registerAdapter(NameModelAdapter());
+    await Hive.openBox<NameModel>('name_db');
   }
 
   runApp(const MyApp());

@@ -12,14 +12,13 @@ class LoginModal extends HiveObject {
   @HiveField(2)
   final String password;
 
-
   LoginModal({
     required this.name,
     required this.password,
     required this.email,
-   
   });
 }
+
 @HiveType(typeId: 2)
 class DataModel extends HiveObject {
   @HiveField(0)
@@ -29,10 +28,15 @@ class DataModel extends HiveObject {
   @HiveField(2)
   final String weight;
   DataModel({
-
     required this.age,
     required this.height,
     required this.weight,
   });
-  //  static Box<DataModel> getData() => Hive.box('data_db');
+}
+
+@HiveType(typeId: 3)
+class NameModel extends HiveObject {
+  @HiveField(0)
+  final String username;
+  NameModel({required this.username});
 }

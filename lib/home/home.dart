@@ -7,11 +7,15 @@ import 'package:flutter/material.dart';
 
 
 
-class HomePage extends StatelessWidget {
-   HomePage({super.key});
+class HomePage extends StatefulWidget {
+   const HomePage({super.key});
   static ValueNotifier<int> selectedIndexNotifier = ValueNotifier(0);
-  
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final _pages =  [
     const ScreenHome(),
     const ScreenFood(),
@@ -43,17 +47,19 @@ class HomePage extends StatelessWidget {
 
       // DecoratedBox(
       //   decoration:  BoxDecoration(
-      //     // image for scaffold
-      //     //  image: DecorationImage(image: AssetImage(background),fit: BoxFit.fill)
+      //     image for scaffold
+      //      image: DecorationImage(image: AssetImage(background),fit: BoxFit.fill)
       //   ),
       body: SafeArea(
         child: ValueListenableBuilder(
-          valueListenable: selectedIndexNotifier,
+          valueListenable: HomePage.selectedIndexNotifier,
           builder: (BuildContext context, int updatedIndex, _) {
             return _pages[updatedIndex];
           },
         ),
       ),
     );
+    
+
   }
 }

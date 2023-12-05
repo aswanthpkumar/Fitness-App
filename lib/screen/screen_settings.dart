@@ -97,7 +97,7 @@ class ScreenSettings extends StatelessWidget {
                           Icon(Icons.person_4_outlined),
                           SizedBox(width: 20),
                           Text(
-                            'Personal Data',
+                            'Personal info',
                             style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,

@@ -1,3 +1,4 @@
+import 'package:demo_project/assets.dart';
 import 'package:demo_project/home/home.dart';
 import 'package:demo_project/main.dart';
 
@@ -28,9 +29,9 @@ class _ScreenSplashState extends State<ScreenSplash> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Center(
-        child: Text('splash'),
+        child: Image(image: AssetImage(splash),),
       ),
     );
   }
@@ -42,7 +43,7 @@ class _ScreenSplashState extends State<ScreenSplash> {
 
   Future<void> gotoLogin() async {
     await Future.delayed(
-      const Duration(seconds: 1),
+      const Duration(seconds: 3),
     );
     // ignore: use_build_context_synchronously
     Navigator.of(context).pushReplacement(

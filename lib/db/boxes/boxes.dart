@@ -7,3 +7,7 @@ class Boxes{
 class Boxes1{
    static Box<DataModel>getData()=>Hive.box<DataModel>('data_db');
 }
+
+class Boxes2{
+   static Box<NameModel>getData()=>Hive.box<NameModel>('name_db');
+}

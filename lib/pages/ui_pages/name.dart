@@ -1,20 +1,17 @@
 import 'package:demo_project/assets.dart';
-import 'package:demo_project/db/functions/db_functions.dart';
 import 'package:demo_project/db/model/date_modal.dart';
-import 'package:demo_project/pages/logIn/login_screen.dart';
+import 'package:demo_project/pages/ui_pages/height_weight_age.dart';
 import 'package:flutter/material.dart';
-
-class HeightWeightAge extends StatefulWidget {
-  const HeightWeightAge({super.key});
+import 'package:demo_project/db/functions/db_functions.dart';
+class Name extends StatefulWidget {
+  const Name({super.key});
 
   @override
-  State<HeightWeightAge> createState() => _HeightWeightAgeState();
+  State<Name> createState() => _NameState();
 }
 
-class _HeightWeightAgeState extends State<HeightWeightAge> {
-  final heightController = TextEditingController();
-  final weightController = TextEditingController();
-  final ageController = TextEditingController();
+class _NameState extends State<Name> {
+  final nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +26,7 @@ class _HeightWeightAgeState extends State<HeightWeightAge> {
               height: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(heigth),
+                  image: AssetImage(settingspageimage),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -39,9 +36,9 @@ class _HeightWeightAgeState extends State<HeightWeightAge> {
             ),
           ),
           Positioned(
-            top: 200,
+            top: 250,
             child: Container(
-              height: 380,
+              height: 280,
               width: MediaQuery.of(context).size.width - 40,
               margin: const EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
@@ -56,47 +53,29 @@ class _HeightWeightAgeState extends State<HeightWeightAge> {
                 ],
               ),
               child: Padding(
-                padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
+                padding: const EdgeInsets.only(top: 20, right: 30, left: 30),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      'Age',
-                      style: TextStyle(fontSize: 20),
+                      'Enter your Name',
+                      style: TextStyle(fontSize: 40),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 40,
                     ),
-                    buildTextField(
-                        Icons.person_add_alt_1, 'age', ageController),
+                    buildTextField('Name', nameController),
                     const SizedBox(
-                      height: 10,
-                    ),
-                    const Text('Height', style: TextStyle(fontSize: 20)),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    buildTextField(Icons.height, 'height', heightController),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Text('Weight', style: TextStyle(fontSize: 20)),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    buildTextField(Icons.monitor_weight_outlined, 'weight',
-                        weightController),
-                    const SizedBox(
-                      height: 10,
+                      height: 15,
                     ),
                     Center(
                       child: TextButton(
                         onPressed: () {
-                          addAction();
-                          // personalData(context);
+                          addName1();
                         },
-                        child: const Text('Submit',
-                            style: TextStyle(fontSize: 20)),
+                        child: const Text(
+                          'Submit',
+                          style: TextStyle(fontSize: 20),
+                        ),
                       ),
                     ),
                   ],
@@ -109,17 +88,13 @@ class _HeightWeightAgeState extends State<HeightWeightAge> {
     );
   }
 
-  Widget buildTextField(IconData icon, String hintText, controller) {
+  Widget buildTextField(String hintText, controller) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8.0),
       child: TextFormField(
         keyboardType: TextInputType.number,
         controller: controller,
         decoration: InputDecoration(
-          prefixIcon: Icon(
-            icon,
-            color: Colors.grey[400],
-          ),
           enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.black87),
             borderRadius: BorderRadius.all(Radius.circular(35.0)),
@@ -136,29 +111,20 @@ class _HeightWeightAgeState extends State<HeightWeightAge> {
     );
   }
 
-  Future<void> addAction() async {
-    final age = ageController.text.trim();
-    final height = heightController.text.trim();
-    final weight = weightController.text.trim();
-    if (age.isEmpty || height.isEmpty || weight.isEmpty) {
+  Future<void> addName1() async {
+    final name = nameController.text.trim();
+    if (name.isEmpty) {
       return;
     }
-    ("$age$height$weight");
-    final logdata = DataModel(
-      age: age,
-      height: height,
-      weight: weight,
-    );
-    addData(logdata);
-    (logdata);
+    (name);
+    final namedata1 = NameModel(username: name);
+    nameData(namedata1);
+    namedata1;
+
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (ctx1) => const LoginSignupScreen(),
+        builder: (ctx1) => const HeightWeightAge(),
       ),
     );
   }
-  //  Future<void> personalData(BuildContext context) async {
-  //   final sharedPrefs = await SharedPreferences.getInstance();
-  //   await sharedPrefs.setBool(dataValue, true);
-  // }
 }

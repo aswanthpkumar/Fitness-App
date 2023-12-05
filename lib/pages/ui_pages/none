@@ -1,0 +1,106 @@
+ Stack(
+        children: [
+          Positioned(
+            top: 0,
+            right: 0,
+            left: 0,
+            child: Container(
+              margin: const EdgeInsets.only(top: 1),
+              height: 300,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(settingspageimage),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              child: Container(
+                color: Colors.blue.withOpacity(.15),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 200,
+            child: Container(
+              height: 380,
+              width: MediaQuery.of(context).size.width - 40,
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.3),
+                    blurRadius: 15,
+                    spreadRadius: 5,
+                  ),
+                ],
+              ),
+             
+
+
+             
+            ),
+          ),
+        ],
+      
+    );
+
+
+
+
+
+
+
+      Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text('Age'),
+                buildTextField(Icons.person_add_alt_1, 'age', ageController),
+                const Text('Height'),
+                buildTextField(Icons.height, 'height', heightController),
+                const Text('Weight'),
+                buildTextField(
+                    Icons.monitor_weight_outlined, 'weight', weightController),
+                Center(
+                  child: TextButton(
+                    onPressed: () {
+                      addAction();
+                      // personalData(context);
+                    },
+                    child: const Text('Submit'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+
+
+
+
+
+
+
+ return const Padding(
+      padding: EdgeInsets.only(left: 10),
+      child: Column(
+        children: [
+          Text(
+            'Hi Aswanth',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 40,
+            ),
+          ),
+          Text(
+            'Lets check your activity',
+            style: TextStyle(
+              color: Colors.blueGrey,
+              fontSize: 20,
+            ),
+          ),
+        ],
+      ),
+    );

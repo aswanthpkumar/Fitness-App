@@ -1,3 +1,11 @@
+// splash
+String splash ='assets/Photos/splash.png';
+
+
+// heightweight
+String heigth ='assets/Photos/heightandweight.jpg';
+
+
 // gym page
 String logo = 'assets/Photos/IMG_4026.jpg';
 String run = 'assets/Photos/steps.png';
@@ -20,7 +28,7 @@ String strongback = 'assets/Photos/strongback.jpeg';
 String complexcore = 'assets/Photos/complexcore.jpeg';
 String amazingbutt = 'assets/Photos/amazingbutt.jpeg';
 String chestarms = 'assets/Photos/chestarms.jpeg';
-String sholder = 'assets/Photos/sholder.jpeg';
+String shoulder = 'assets/Photos/sholder.jpeg';
 String upperbody = 'assets/Photos/upperbody.jpeg';
 String image1 = 'assets/Photos/image_1.webp';
 String image2 = 'assets/Photos/image_2.jpg';
@@ -28,7 +36,7 @@ String image3 = 'assets/Photos/image_3.jpg';
 String settingspageimage = 'assets/Photos/settingspageimage.jpeg';
 String girlwithdumbbell='assets/Photos/girlinagym.jpeg';
 
-// gym workout page text ABS BEGINNING
+// gym workout page text ABS
 String jumpingjackstext1 =
     'Start with your feet together and your arms by your sides,then jump up with your feet apart\nand your hands overhead.';
 String jumpingjackstext2 =
@@ -76,6 +84,22 @@ String tricepsdipstext1='For the start position,sit on the chair. Then move your
 String tricepsdipstext2='Slowly bend and stretch you arms to make our body go up and down. This is a great exercise for the triceps.';
 String widearmpushupstext1='Start in the regular push-ups position but with your hands spread wider than your shoulder.';
 String widearmpushupstext2='Then push your body up and down. Remember to keep your body straight.';
+
+// gym workout page text Arm
+String armraises30stext1='Stand on the floor with your arms extended straight forward at shoulder height.\n\nExhale, raise your arms above head. Innhale, return to the start position and repeat.';
+String sidearmraisetext1='Stand with your feet shoulder width arapt.\n\nRaise your arms to the sides at shoulder height, then put them down.\n\nRepeat the exercise. Keep your arms staight during the exercise.';
+String armcircelsclockwisetext1="Stand on the floor with your arms extended straight out to the sides at shoulder height.\n\nMove your arms clockwise in circle fast.\n\nTry to do it as fast as you can.\n\nIt's a great exercise for the deltoid muscle.";
+String armconunterclockwisetexd1="Stand on the floor with your arms extended straight out to the sides at shoulder height.\n\nMove your arms counterclockwise in circle fast.\n\nTry to do it as fast as you can.\n\nIt's a great exercise for the deltoid muscle.";
+String diamondpushupsx6text1='Start in the push-up position. Make a diamand shape with your forefingers and thumbs together under your chest.\n\nThen push your body up and down. Remember to keep your body straight';
+String chestpresspulsetext1='Hold your forearms together at shoulder height and bend your elbows with your hands together to make on L shape.\n\nThen lift your forearms up and down.';
+String legbarellcurlefttext1='Stand against a wall. Lift your right leg up, learn forward and grab underneath your right ankle with your left hand.\n\nBring the ankle up towards the shoulder as much as you can, then lower it and repeat the exercise.';
+String legbarellcurrighttext1='Stand against a wall. Lift your right leg up, learn forward and grab underneath your right ankle with your right hand.\n\nBring the ankle up towards the shoulder as much as you can, then lower it and repeat the exercise.';
+String diagonalplankx10text1='Start in the straight arm pland position.\n\nLift your right arm and left leg until they are parallel with the gorund.\n\nReturn to the start position and repeat with the other side.';
+String punchestext1='Stand with one of your lefs forward and your knees bent slightly. Bend your elbows and clench your fist in front of your face.\n\nExtend one arm forward with the palm facing the floor. Take the arm back and repeat with the other arm.';
+String pushupsx10text1='Lay prone on the gournd with arms supporting your body.\n\nKeep your body straight while raising and lowering your body with your arms.\n\nThis exercise works the chest, shoulders, triceps, back and legs.';
+String inchwormsx8text1='Start with your feet shoulder width apart.\n\nBend your body and walk your hands in front of you as far as you can, then walk your hands back. Repeat the exercise';
+
+
 
 // food page Images
 String breakfast = 'assets/Photos/foodpage/breakfast.png';

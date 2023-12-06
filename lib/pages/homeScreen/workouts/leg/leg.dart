@@ -6,7 +6,6 @@ import 'package:demo_project/pages/homeScreen/workouts/leg/calf_stretch_right.da
 import 'package:demo_project/pages/homeScreen/workouts/leg/donkey_kicks_left.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/donkey_kicks_right.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/left_quad_stretch_wall.dart';
-import 'package:demo_project/pages/homeScreen/workouts/leg/right_quad_stretch_wall.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/side_hop.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/side_lying_left.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/side_lying_right.dart';
@@ -72,7 +71,7 @@ class Leg extends StatelessWidget {
                         ),
                       ),
                     ],
-                   ),
+                  ),
                 ),
               ),
             ),
@@ -204,21 +203,6 @@ class Leg extends StatelessWidget {
                             MaterialPageRoute(
                               builder: (ctx) {
                                 return const LeftQuadStretchwithWall();
-                              },
-                            ),
-                          );
-                        },
-                        workOutTIme: '00:30',
-                        // space: 150,
-                      ),
-                      GymYogaWorkout(
-                        workOutName: 'Right Quad Stretch\nwith Wall',
-                        workOutImage: powerjumps,
-                        onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (ctx) {
-                                return const RightQuadStretchwithWall();
                               },
                             ),
                           );

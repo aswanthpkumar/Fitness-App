@@ -100,6 +100,23 @@ String pushupsx10text1='Lay prone on the gournd with arms supporting your body.\
 String inchwormsx8text1='Start with your feet shoulder width apart.\n\nBend your body and walk your hands in front of you as far as you can, then walk your hands back. Repeat the exercise';
 
 
+// gym workout page text leg
+String sidehop30stext1='Stand on the floor, put your hands in front of you and hop from side to side.';
+String squatsx12text2='Stand with your feet shoulder width apart and your arms stretched forward, then lower your body until your thighs are parallel with the floor.\n\nYour knees should be extended in the same direction as your toes. Return to the start position and do the next rep.\n\nThis works the thights, hips buttocks, quads, hamstrings and lower body.';
+String sidelyinglegliftlefttext1='Lie down on your side with your head rested on your right arm. Lift your upper leg up and return to the start position.\n\nMake sure your left leg goes straight up and down during the exercise.\n\nIts a great exercise for the gluteus.';
+String sidelyinglegliftrighttext1='Lie down on your side with your head rested on your left arm. Lift your upper leg up and return to the start position.\n\nMake sure your right leg goes straight up and down during the exercise.\n\nIts a great exercise for the gluteus.';
+String backwardlungetext1='Stand with your feet shoulder width apart and your hands on your hips.\n\nStep a big step backward with your right leg and lower your body until your left thigh is parallel to the floor. Return and repeat with the other side.';
+String donkeykickslefttext1='Start on all fours with your knees under your butt and your hands under your shoulders.\n\nThen lift your left leg and squeeze your butt as much as you can. Go back to the start position and repeat the exercise.';
+String donkeykicksrighttext1='Start on all fours with your knees under your butt and your hands under your shoulders.\n\nThen lift your right leg and squeeze your butt as much as you can. Go back to the start position and repeat the exercise.';
+String leftquadstretchwithwalltext1='Stand with your rihgt hand on the wall. Bend your left leg and grasp your ankle or toes to bring your left calf close to your left thigh. Hold this position.';
+String wallcalfraisestext1='Stand staight with yoiur hands on the wall and feet shoulder width apart.\n\nLift your heels and stand on your toes. Then drop your heels down. Repeat the exercise.';
+String calfstretchlefttext1='Stand one big step away in front of a wall. Step forward with your right foot and push the wall with your hands.\n\nPlease make sure your left leg is fully extended and you can feet your left calf stretching. Hold this position for a few seconds.';
+String calfstretchrighttext1='Stand one big step away in front of a wall. Step forward with your left foot and push the wall with your hands.\n\nPlease make sure your right leg is fully extended and you can feet your right calf stretching. Hold this position for a few seconds.';
+
+
+
+
+
 
 // food page Images
 String breakfast = 'assets/Photos/foodpage/breakfast.png';

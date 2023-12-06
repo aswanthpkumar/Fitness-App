@@ -1,6 +1,3 @@
-import 'package:demo_project/home/home.dart';
-import 'package:demo_project/pages/ui_pages/height_weight_age.dart';
-import 'package:demo_project/pages/ui_pages/name.dart';
 import 'package:demo_project/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';

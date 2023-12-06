@@ -1,4 +1,6 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/leg/side_lying_right.dart';
+import 'package:demo_project/pages/homeScreen/workouts/leg/squats.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
 import 'package:flutter/material.dart';
 
@@ -7,15 +9,31 @@ class SideLyingLegLiftLeft extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Section(
         coverimage: powerjumps,
-        heading: '',
-        para1: '',
+        heading: 'Side-Lying Leg Lift Left x12',
+        para1: sidelyinglegliftlefttext1,
         para2: '',
-        pagecount: '',
-        ontapNext: (){},
-        ontapPrevious: (){},
+        pagecount: '3/11',
+        ontapNext: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const SideLyingLegLiftRight();
+              },
+            ),
+          );
+        },
+        ontapPrevious: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Squats();
+              },
+            ),
+          );
+        },
       ),
     );
   }

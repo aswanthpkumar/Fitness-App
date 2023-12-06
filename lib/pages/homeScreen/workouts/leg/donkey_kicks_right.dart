@@ -1,4 +1,6 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/leg/donkey_kicks_left.dart';
+import 'package:demo_project/pages/homeScreen/workouts/leg/left_quad_stretch_wall.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
 import 'package:flutter/material.dart';
 
@@ -7,15 +9,31 @@ class DonkeyKicksRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Section(
         coverimage: powerjumps,
-        heading: '',
-        para1: '',
+        heading: 'Donkey Kicks Right x16',
+        para1: donkeykicksrighttext1,
         para2: '',
-        pagecount: '',
-        ontapNext: (){},
-        ontapPrevious: (){},
+        pagecount: '7/11',
+        ontapNext: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const LeftQuadStretchwithWall();
+              },
+            ),
+          );
+        },
+        ontapPrevious: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const DonkeyKicksLeft();
+              },
+            ),
+          );
+        },
       ),
     );
   }

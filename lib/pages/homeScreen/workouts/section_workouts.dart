@@ -70,9 +70,9 @@ class Section extends StatelessWidget {
                 style: const TextStyle(fontSize: 20),
               ),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
             Padding(
-              padding: const EdgeInsets.only(top: 40),
+              padding: const EdgeInsets.only(top: 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

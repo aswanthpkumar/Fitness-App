@@ -1,3 +1,8 @@
+import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
+import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/counter_clockwise_sholder_rolls.dart';
+import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/ease_yoga_for_beignners.dart';
+import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/upand_down_nods.dart';
 import 'package:flutter/material.dart';
 
 class SidetosideTurns extends StatelessWidget {
@@ -5,6 +10,50 @@ class SidetosideTurns extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Section(
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const EaseYogaforBeginners();
+              },
+            ),
+          );
+        },
+        coverimage: powerjumps,
+        heading: 'Side to Side Turns',
+        para1: '',
+        para2: '',
+        pagecount: '3/11',
+        ontapNext: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const UpandDownNods();
+              },
+            ),
+          );
+        },
+        ontapPrevious: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const CounterclockwiseSholderRolls();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const EaseYogaforBeginners();
+              },
+            ),
+          );
+        },
+      ),
+    );
   }
 }

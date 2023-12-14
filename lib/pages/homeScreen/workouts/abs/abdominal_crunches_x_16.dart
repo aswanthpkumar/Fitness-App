@@ -1,16 +1,26 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/abs.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/jumping_jacks.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
 import 'package:flutter/material.dart';
 
 class AbdominalCrunches extends StatelessWidget {
-  const AbdominalCrunches ({super.key});
+  const AbdominalCrunches({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Section(
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Abs();
+              },
+            ),
+          );
+        },
         coverimage: powerjumps,
         heading: 'Abdominal Crunches x16',
         para1: abdominalCrunchestext1,
@@ -30,6 +40,15 @@ class AbdominalCrunches extends StatelessWidget {
             MaterialPageRoute(
               builder: (ctx) {
                 return const JumpingJacks();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Abs();
               },
             ),
           );

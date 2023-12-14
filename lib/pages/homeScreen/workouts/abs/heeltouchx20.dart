@@ -1,4 +1,5 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/abs.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/leg_raisesx16.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/mountainclimber.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
@@ -11,29 +12,48 @@ class HeelTouchx20 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Section(
-          coverimage: powerjumps,
-          heading: 'Heel Touch x20',
-          para1: heeltouchx20text1,
-          para2: heeltouchx20text2,
-          pagecount: '5/16',
-          ontapNext: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (ctx) {
-                  return const LegRaisesx16();
-                },
-              ),
-            );
-          },
-          ontapPrevious: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (ctx) {
-                  return const MountainClimberx16();
-                },
-              ),
-            );
-          }),
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Abs();
+              },
+            ),
+          );
+        },
+        coverimage: powerjumps,
+        heading: 'Heel Touch x20',
+        para1: heeltouchx20text1,
+        para2: heeltouchx20text2,
+        pagecount: '5/16',
+        ontapNext: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const LegRaisesx16();
+              },
+            ),
+          );
+        },
+        ontapPrevious: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const MountainClimberx16();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Abs();
+              },
+            ),
+          );
+        },
+      ),
     );
   }
 }

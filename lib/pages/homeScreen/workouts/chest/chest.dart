@@ -8,6 +8,7 @@ import 'package:demo_project/pages/homeScreen/workouts/chest/knee_pushups.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/push_ups.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/triceps_dips.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/wide_arm_pushups.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workouts.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,17 @@ class Chest extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return const Gym();
+                  },
+                ),
+              );
+            },
+            icon: const Icon(Icons.arrow_back)),
         Stack(
           children: [
             Positioned(

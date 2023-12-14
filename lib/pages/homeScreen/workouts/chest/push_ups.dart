@@ -1,4 +1,5 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/chest.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/incline_push_ups.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/wide_arm_pushups.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
@@ -11,6 +12,15 @@ class Pushups extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Section(
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Chest();
+              },
+            ),
+          );
+        },
         coverimage: powerjumps,
         heading: 'Push-Ups x8',
         para1: pushupschesttext1,
@@ -30,6 +40,15 @@ class Pushups extends StatelessWidget {
             MaterialPageRoute(
               builder: (ctx) {
                 return const InclinePushups();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Chest();
               },
             ),
           );

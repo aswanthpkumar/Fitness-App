@@ -1,4 +1,5 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/chest.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/cobra_stretch.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/triceps_dips.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
@@ -11,28 +12,46 @@ class KneePushups extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Section(
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Chest();
+              },
+            ),
+          );
+        },
         coverimage: powerjumps,
         heading: 'Knee Push-Ups x8',
         para1: kneepushstext1,
         para2: '',
         pagecount: '6/8',
-        ontapNext: (){
-           Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (ctx) {
-                  return const CobraStretch();
-                },
-              ),
-            );
+        ontapNext: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const CobraStretch();
+              },
+            ),
+          );
         },
-        ontapPrevious: (){
-           Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (ctx) {
-                  return const TricepsDips();
-                },
-              ),
-            );
+        ontapPrevious: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const TricepsDips();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Chest();
+              },
+            ),
+          );
         },
       ),
     );

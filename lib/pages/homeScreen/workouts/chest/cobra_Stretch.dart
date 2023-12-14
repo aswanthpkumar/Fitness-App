@@ -1,4 +1,5 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/chest/chest.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/chest_stretch.dart';
 import 'package:demo_project/pages/homeScreen/workouts/chest/knee_pushups.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
@@ -11,6 +12,15 @@ class CobraStretch extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Section(
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Chest();
+              },
+            ),
+          );
+        },
         coverimage: powerjumps,
         heading: 'Cobra Stretch 20s',
         para1: cobrastretch30text1,
@@ -30,6 +40,15 @@ class CobraStretch extends StatelessWidget {
             MaterialPageRoute(
               builder: (ctx) {
                 return const KneePushups();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Chest();
               },
             ),
           );

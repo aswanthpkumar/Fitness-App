@@ -2,6 +2,7 @@ import 'package:demo_project/pages/homeScreen/workouts/abs/abs.dart';
 import 'package:flutter/material.dart';
 
 class Section extends StatelessWidget {
+  final VoidCallback ontap;
   final String coverimage;
   final String heading;
   final String para1;
@@ -9,15 +10,19 @@ class Section extends StatelessWidget {
   final String pagecount;
   final VoidCallback ontapNext;
   final VoidCallback ontapPrevious;
+  final VoidCallback ontapClose;
+
   const Section(
       {super.key,
+      required this.ontap,
       required this.coverimage,
       required this.heading,
       required this.para1,
       required this.para2,
       required this.pagecount,
       required this.ontapNext,
-      required this.ontapPrevious});
+      required this.ontapPrevious,
+      required this.ontapClose});
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +31,10 @@ class Section extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            GestureDetector(
+              onTap: ontap,
+              child: const Icon(Icons.arrow_back),
+            ),
             Stack(
               children: [
                 Container(
@@ -78,13 +87,10 @@ class Section extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: ontapPrevious,
-                    child: const Text(
-                      'Previous',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30,
-                      ),
+                    child: const Icon(
+                      Icons.arrow_back,
+                      size: 30,
+                      color: Colors.black,
                     ),
                   ),
                   Text(
@@ -96,25 +102,15 @@ class Section extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: ontapNext,
-                    child: const Text(
-                      'Next',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30,
-                      ),
+                    child: const Icon(
+                      Icons.arrow_forward,
+                      size: 30,
+                      color: Colors.black,
+                      opticalSize: 50,
                     ),
                   ),
                   GestureDetector(
-                    onTap: (){
-                      Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (ctx) {
-                          return const Abs();
-                        },
-                      ),
-                    );
-                    },
+                    onTap:ontapClose,
                     child: const Card(
                       shape: StadiumBorder(
                         side: BorderSide(color: Colors.blue, width: 2),

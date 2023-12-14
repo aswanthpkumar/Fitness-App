@@ -1,4 +1,5 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/abs/abs.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/healstouchx20_2.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist_x_32.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
@@ -11,28 +12,46 @@ class MountainClimberx12 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Section(
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Abs();
+              },
+            ),
+          );
+        },
         coverimage: powerjumps,
         heading: 'Mountain Climber x12',
         para1: mountainclimberx12text1,
         para2: mountainclimberx12text2,
         pagecount: '10/16',
-        ontapNext: (){
-           Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (ctx) {
-                  return const HeelTouchx202();
-                },
-              ),
-            );
+        ontapNext: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const HeelTouchx202();
+              },
+            ),
+          );
         },
-        ontapPrevious: (){
-           Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (ctx) {
-                  return const RussianTwistx32();
-                },
-              ),
-            );
+        ontapPrevious: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const RussianTwistx32();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Abs();
+              },
+            ),
+          );
         },
       ),
     );

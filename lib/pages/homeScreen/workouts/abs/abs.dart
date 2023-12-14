@@ -16,6 +16,7 @@ import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/russian_twist_x_32.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/spinlumbarleft.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/spinlumbarright.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workouts.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,17 @@ class Abs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return const Gym();
+                  },
+                ),
+              );
+            },
+            icon: const Icon(Icons.arrow_back)),
         Stack(
           children: [
             Positioned(

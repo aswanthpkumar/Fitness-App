@@ -113,8 +113,13 @@ String wallcalfraisestext1='Stand staight with yoiur hands on the wall and feet 
 String calfstretchlefttext1='Stand one big step away in front of a wall. Step forward with your right foot and push the wall with your hands.\n\nPlease make sure your left leg is fully extended and you can feet your left calf stretching. Hold this position for a few seconds.';
 String calfstretchrighttext1='Stand one big step away in front of a wall. Step forward with your left foot and push the wall with your hands.\n\nPlease make sure your right leg is fully extended and you can feet your right calf stretching. Hold this position for a few seconds.';
 
-
-
+// gym workout page sholulderandback
+String rhomboidpullstext1='Stand with your feet shoulder width apart.\n\nRaise your arms parallel to the ground, and bend your elbows. Pull your elbows back and squeeze your shoulder blades.\n\nRepeat this exercise.';
+String sidelyingfloorlefttext1='Lie on your right side with your right knee slightly bend in front of you and your left leg stretched behind the right leg.\n\nStraighten your left arm over your head and gently pull on you left wrist to stretch the left side of your body.';
+String sidelyingfloorrighttext1='Lie on your left side with your left knee slightly bend in front of you and your right leg stretched behind the left leg.\n\nStraighten your right arm over your head and gently pull on you right wrist to stretch the right side of your body.';
+String armscissorstext1='Stand upright with your feet shoulder width apart.\n\nStretch your arms in front of you at shoulder height with one arm overlap the other in the shape of the letter "X", and then spend them apart.';
+String catcowposttext1='Start on all fours with your knees under your butt and your hands directly under your shoulder.\n\nThen take a breath and make your belly fall down,shoulders roll back and head come up towards the celling.';
+String childposetext1='Start with your knees and hands on the floor. Put your hands a little forward, widen your knees and put your toes together.';
 
 
 
@@ -123,7 +128,6 @@ String breakfast = 'assets/Photos/foodpage/breakfast.png';
 String dinner = 'assets/Photos/foodpage/dinner.png';
 String lowcolories = 'assets/Photos/foodpage/low_colories.png';
 String lunch = 'assets/Photos/foodpage/lunch.png';
-
 String salad = 'assets/Photos/foodpage/salad.png';
 String snacks = 'assets/Photos/foodpage/snacks.png';
 String soup = 'assets/Photos/foodpage/soup.png';

@@ -1,5 +1,6 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
+import 'package:demo_project/pages/homeScreen/yoga/yoga.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,17 @@ class EveningYogaFlow extends StatelessWidget {
     return  Scaffold(
       body: ListView(
         children: [
+           IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (ctx) {
+                      return const Yoga();
+                    },
+                  ),
+                );
+              },
+              icon: const Icon(Icons.arrow_back)),
           Stack(
             children: [
               Positioned(

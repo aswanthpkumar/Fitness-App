@@ -11,6 +11,7 @@ import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/side_to_
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/upand_down_nods.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/walkthe_dog.dart';
 import 'package:demo_project/pages/homeScreen/yoga/easeYogaforBeginners/clock_wise_sholder_rolls.dart';
+import 'package:demo_project/pages/homeScreen/yoga/yoga.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
@@ -22,6 +23,17 @@ class EaseYogaforBeginners extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
+          IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (ctx) {
+                      return const Yoga();
+                    },
+                  ),
+                );
+              },
+              icon: const Icon(Icons.arrow_back)),
           Stack(
             children: [
               Positioned(
@@ -243,119 +255,7 @@ class EaseYogaforBeginners extends StatelessWidget {
                               ),
                             );
                           },
-                          workOutTIme: '00:30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Creacent Low Louge Left',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            // Navigator.of(context).push(
-                            //   MaterialPageRoute(
-                            //     builder: (ctx) {
-                            //       return const CrescentLowLungeLeft();
-                            //     },
-                            //   ),
-                            // );
-                          },
-                          workOutTIme: '00:30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Cobra Stretch',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            // Navigator.of(context).push(
-                            //   MaterialPageRoute(
-                            //     builder: (ctx) {
-                            //       return const ();
-                            //     },
-                            //   ),
-                            // );
-                          },
                           workOutTIme: '00.30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Walk The Dog',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
-                          },
-                          workOutTIme: '00.30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Crescent Low Lunge Right',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
-                          },
-                          workOutTIme: '00.30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Half Forward Bend',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
-                          },
-                          workOutTIme: '00.30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Standing Back Stretches',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
-                          },
-                          workOutTIme: '00.30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Head Tilt',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
-                          },
-                          workOutTIme: '00.30',
-                        ),
-                        GymYogaWorkout(
-                          workOutName: 'Warrior I Left',
-                          workOutImage: powerjumps,
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (ctx) {
-                                  return const ClcockwiseSholderRolls();
-                                },
-                              ),
-                            );
-                          },
-                          workOutTIme: '00:20',
                         ),
                       ],
                     ),

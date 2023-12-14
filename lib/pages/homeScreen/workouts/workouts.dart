@@ -5,7 +5,7 @@ import 'package:demo_project/pages/homeScreen/workouts/chest/chest.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/leg.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section.dart';
 import 'package:demo_project/pages/homeScreen/workouts/abs/abs.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/sholderandback.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/shoulderandback.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
@@ -114,12 +114,12 @@ class Gym extends StatelessWidget {
                 ),
                 Section(
                   img: upperbody,
-                  text: 'Sholder and Back',
+                  text: 'Shoulder and Back',
                   ontap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (ctx) {
-                          return const SholderandBack();
+                          return const ShoulderandBack();
                         },
                       ),
                     );

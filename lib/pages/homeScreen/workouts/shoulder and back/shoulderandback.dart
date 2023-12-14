@@ -1,23 +1,35 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/workout.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/arms_raises.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/arms_scissors.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/cat_cow_pose.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/child_pose.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/rhomboid_pulls.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/side_arm_raise.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/side_lying_left.dart';
-import 'package:demo_project/pages/homeScreen/workouts/sholder%20and%20back/side_lying_right.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/arms_raises.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/arms_scissors.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/cat_cow_pose.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/child_pose.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/rhomboid_pulls.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/side_arm_raise.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/side_lying_left.dart';
+import 'package:demo_project/pages/homeScreen/workouts/shoulder%20and%20back/side_lying_right.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workouts.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
-class SholderandBack extends StatelessWidget {
-  const SholderandBack({super.key});
+class ShoulderandBack extends StatelessWidget {
+  const ShoulderandBack({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return const Gym();
+                  },
+                ),
+              );
+            },
+            icon: const Icon(Icons.arrow_back)),
         Stack(
           children: [
             Positioned(

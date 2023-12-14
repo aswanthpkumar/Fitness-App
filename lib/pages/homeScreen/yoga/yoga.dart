@@ -1,7 +1,7 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/home/home.dart';
 import 'package:demo_project/pages/homeScreen/yoga/armsWokout/arms_workout.dart';
-import 'package:demo_project/pages/homeScreen/yoga/beginnerCoreWorkout/beginner_innert_thigh_toning.dart';
+import 'package:demo_project/pages/homeScreen/yoga/beginnerInnerThighToning/beginner_innert_thigh_toning.dart';
 import 'package:demo_project/pages/homeScreen/yoga/card_1.dart';
 import 'package:demo_project/pages/homeScreen/yoga/card_2.dart';
 import 'package:demo_project/pages/homeScreen/yoga/card_3.dart';

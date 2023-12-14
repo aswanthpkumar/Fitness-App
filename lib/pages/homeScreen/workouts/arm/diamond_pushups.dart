@@ -1,4 +1,5 @@
 import 'package:demo_project/assets.dart';
+import 'package:demo_project/pages/homeScreen/workouts/arm/arm.dart';
 import 'package:demo_project/pages/homeScreen/workouts/arm/arm_counterclockwise.dart';
 import 'package:demo_project/pages/homeScreen/workouts/arm/chest_press_pluse.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
@@ -11,6 +12,15 @@ class DiamondPushups extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Section(
+        ontap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Arm();
+              },
+            ),
+          );
+        },
         coverimage: powerjumps,
         heading: 'Diamond Pushups x6',
         para1: diamondpushupsx6text1,
@@ -30,6 +40,15 @@ class DiamondPushups extends StatelessWidget {
             MaterialPageRoute(
               builder: (ctx) {
                 return const ArmCriclesCounterclockwise();
+              },
+            ),
+          );
+        },
+        ontapClose: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const Arm();
               },
             ),
           );

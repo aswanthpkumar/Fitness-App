@@ -11,6 +11,7 @@ import 'package:demo_project/pages/homeScreen/workouts/leg/side_lying_left.dart'
 import 'package:demo_project/pages/homeScreen/workouts/leg/side_lying_right.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/squats.dart';
 import 'package:demo_project/pages/homeScreen/workouts/leg/wall_calf_raises.dart';
+import 'package:demo_project/pages/homeScreen/workouts/workouts.dart';
 import 'package:demo_project/saparater.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,17 @@ class Leg extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return const Gym();
+                  },
+                ),
+              );
+            },
+            icon: const Icon(Icons.arrow_back)),
         Stack(
           children: [
             Positioned(

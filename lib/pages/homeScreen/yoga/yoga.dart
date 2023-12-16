@@ -10,7 +10,6 @@ import 'package:demo_project/pages/homeScreen/yoga/eveningYogaFlow/evening_yoga_
 import 'package:demo_project/pages/homeScreen/yoga/kidsYoga/kids_yoga.dart';
 import 'package:demo_project/pages/homeScreen/yoga/legWorkout/leg_workout.dart';
 import 'package:demo_project/pages/homeScreen/yoga/morningYogaFlow/morning_yoga_flow.dart';
-import 'package:demo_project/pages/homeScreen/yoga/only4MovesforAbs/only_4_movesfor_abs.dart';
 import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sun_solutations_flow.dart';
 import 'package:flutter/material.dart';
 
@@ -84,13 +83,15 @@ class Yoga extends StatelessWidget {
               Card1(
                 name: 'Sun solutations\nflow',
                 colors: Colors.amberAccent.shade100,
-                ontap: () {Navigator.of(context).push(
+                ontap: () {
+                  Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
                         return const SunSolutationsFlow();
                       },
                     ),
-                  );},
+                  );
+                },
               ),
             ],
           ),
@@ -98,13 +99,15 @@ class Yoga extends StatelessWidget {
           Card2(
             colors: Colors.yellow.shade100,
             name: 'Kids yoga',
-            ontap: () {Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (ctx) {
-                        return const KidsYoga();
-                      },
-                    ),
-                  );},
+            ontap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return const KidsYoga();
+                  },
+                ),
+              );
+            },
           ),
           const SizedBox(height: 5),
           Row(
@@ -113,24 +116,28 @@ class Yoga extends StatelessWidget {
               Card3(
                 colors: Colors.yellow.shade300,
                 name: 'Morning Yoga\nflow',
-                ontap: () {Navigator.of(context).push(
+                ontap: () {
+                  Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
                         return const MorningYogaFlow();
                       },
                     ),
-                  );},
+                  );
+                },
               ),
               Card3(
                 colors: Colors.greenAccent.shade200,
                 name: 'Evening Yoga\nflow',
-                ontap: () {Navigator.of(context).push(
+                ontap: () {
+                  Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
                         return const EveningYogaFlow();
                       },
                     ),
-                  );},
+                  );
+                },
               ),
             ],
           ),
@@ -141,24 +148,28 @@ class Yoga extends StatelessWidget {
               Card3(
                 colors: Colors.cyanAccent.shade100,
                 name: 'Arms\nwokout',
-                ontap: () {Navigator.of(context).push(
+                ontap: () {
+                  Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
                         return const ArmsWorkout();
                       },
                     ),
-                  );},
+                  );
+                },
               ),
               Card3(
                 colors: Colors.yellowAccent.shade100,
                 name: 'Beginner inner\nthigh toning',
-                ontap: () {Navigator.of(context).push(
+                ontap: () {
+                  Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (ctx) {
                         return const BeginnerInnerThighToning();
                       },
                     ),
-                  );},
+                  );
+                },
               )
             ],
           ),
@@ -166,42 +177,17 @@ class Yoga extends StatelessWidget {
           Card2(
             colors: Colors.blueAccent.shade100,
             name: 'Leg workout',
-            ontap: () {Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (ctx) {
-                        return const LegWorkout();
-                      },
-                    ),
-                  );},
+            ontap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return const LegWorkout();
+                  },
+                ),
+              );
+            },
           ),
           const SizedBox(height: 10),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Card3(
-                colors: Colors.limeAccent.shade100,
-                name: 'Only 4 moves\nfor abs',
-                ontap: () {Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (ctx) {
-                        return const Only4MovesAbs();
-                      },
-                    ),
-                  );},
-              ),
-              Card3(
-                colors: Colors.yellowAccent.shade100,
-                name: 'Beginner core\nworkout',
-                ontap: () {Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (ctx) {
-                        return const BeginnerInnerThighToning();
-                      },
-                    ),
-                  );},
-              ),
-            ],
-          ),
         ],
       ),
     );

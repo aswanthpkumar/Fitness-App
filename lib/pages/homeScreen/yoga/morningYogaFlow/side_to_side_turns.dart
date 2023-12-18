@@ -23,7 +23,7 @@ class SidetoSideTurns extends StatelessWidget {
           },
           coverimage: powerjumps,
           heading: 'Side to Side Turns',
-          para1: '',
+          para1: sidetosideturnstext1,
           para2: '',
           pagecount: '4/9',
           ontapNext: () {

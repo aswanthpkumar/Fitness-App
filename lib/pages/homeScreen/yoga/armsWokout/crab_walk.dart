@@ -23,7 +23,7 @@ class CrabWalk extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Crab Walk',
-        para1: '',
+        para1: crabwalktext1,
         para2: '',
         pagecount: '4/8',
         ontapNext: () {

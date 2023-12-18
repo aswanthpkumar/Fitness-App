@@ -23,7 +23,7 @@ class UpDownNods extends StatelessWidget {
           },
           coverimage: powerjumps,
           heading: 'Up and Down Nods',
-          para1: '',
+          para1: upanddownnodstext1,
           para2: '',
           pagecount: '3/9',
           ontapNext: () {

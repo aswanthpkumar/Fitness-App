@@ -1,12 +1,11 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/chair.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/half_forward_bend.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sun_solutations_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/forward_bend.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/sun_solutations_flow.dart';
 import 'package:flutter/material.dart';
 
-class Forward extends StatelessWidget {
-  const Forward({super.key});
+class Chair extends StatelessWidget {
+  const Chair({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,24 +21,18 @@ class Forward extends StatelessWidget {
           );
         },
         coverimage: powerjumps,
-        heading: 'Forward Bend',
-        para1: '',
+        heading: 'Chair',
+        para1: chairtext1,
         para2: '',
-        pagecount: '2/10',
+        pagecount: '1/10',
         ontapNext: () { Navigator.of(context).push(
             MaterialPageRoute(  
               builder: (ctx) {
-                return const HalfForwardBend();
+                return const Forward();
               },
             ),
           );},
-        ontapPrevious: () { Navigator.of(context).push(
-            MaterialPageRoute(  
-              builder: (ctx) {
-                return const Chair();
-              },
-            ),
-          );},
+        ontapPrevious: () {},
         ontapClose: () {
           Navigator.of(context).push(
             MaterialPageRoute(

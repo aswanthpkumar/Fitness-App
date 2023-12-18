@@ -22,7 +22,7 @@ class ElbowBack extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Elbow Back',
-        para1: '',
+        para1: elbowsbacktext1,
         para2: '',
         pagecount: '1/8',
         ontapNext: () {

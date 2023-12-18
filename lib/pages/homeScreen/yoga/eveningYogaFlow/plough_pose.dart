@@ -22,7 +22,7 @@ class PloughPose extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Plough Pose',
-        para1: '',
+        para1: ploughposttext1,
         para2: '',
         pagecount: '9/9',
         ontapNext: () {},

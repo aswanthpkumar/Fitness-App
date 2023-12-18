@@ -23,7 +23,7 @@ class Bridge extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Bridge',
-        para1: '',
+        para1: bridgetext1,
         para2: '',
         pagecount: '8/9',
         ontapNext: () {

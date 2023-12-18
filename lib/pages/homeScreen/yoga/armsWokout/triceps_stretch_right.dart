@@ -23,7 +23,7 @@ class TricepsStretchRight extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Triceps Stretch Right',
-        para1: '',
+        para1: tricepsstretchrighttext1,
         para2: '',
         pagecount: '6/8',
         ontapNext: () {

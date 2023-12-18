@@ -23,7 +23,7 @@ class EasyButterflyPose extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Easy Butterfly Pose',
-        para1: '',
+        para1: easybutterflyposetext1,
         para2: '',
         pagecount: '7/9',
         ontapNext: () {

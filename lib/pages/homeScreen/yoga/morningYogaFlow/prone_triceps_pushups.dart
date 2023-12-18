@@ -23,7 +23,7 @@ class ProneTricepsPushups extends StatelessWidget {
           },
           coverimage: powerjumps,
           heading: 'Prone Triceps Push-Ups',
-          para1: '',
+          para1: pronetricepspushupstext1,
           para2: '',
           pagecount: '6/9',
           ontapNext: () {

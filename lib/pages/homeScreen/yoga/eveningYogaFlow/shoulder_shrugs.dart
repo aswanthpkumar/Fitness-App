@@ -22,7 +22,7 @@ class ShoulderShrugs extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Shoulder Shrugs',
-        para1: '',
+        para1: shouoldershrugstext1,
         para2: '',
         pagecount: '1/9',
         ontapNext: () {

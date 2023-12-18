@@ -23,7 +23,7 @@ class StraightarmPlank extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Straight arm Plank',
-        para1: '',
+        para1: straightarmplanktext1,
         para2: '',
         pagecount: '7/9',
         ontapNext: () {

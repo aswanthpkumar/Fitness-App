@@ -22,7 +22,7 @@ class StandingBackBend extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Standing Back Bend',
-        para1: '',
+        para1: standingbackbendtext1,
         para2: '',
         pagecount: '9/9',
         ontapNext: () {},

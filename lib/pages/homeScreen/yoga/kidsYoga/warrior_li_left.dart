@@ -23,7 +23,7 @@ class WarriorLiLeft extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Warrior Li Left',
-        para1: '',
+        para1: warriorilefttext1,
         para2: '',
         pagecount: '2/9',
         ontapNext: () {

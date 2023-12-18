@@ -23,7 +23,7 @@ class StandingBackStretches extends StatelessWidget {
           },
           coverimage: powerjumps,
           heading: 'Standing Back Stretches',
-          para1: '',
+          para1: standingbackstretchestext1,
           para2: '',
           pagecount: '8/9',
           ontapNext: () {

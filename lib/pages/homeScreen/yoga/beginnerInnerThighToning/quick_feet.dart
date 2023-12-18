@@ -22,7 +22,7 @@ class QuickFeet extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Quick Feet',
-        para1: '',
+        para1: quickfeettext1,
         para2: '',
         pagecount: '1/8',
         ontapNext: () {

@@ -121,6 +121,85 @@ String armscissorstext1='Stand upright with your feet shoulder width apart.\n\nS
 String catcowposttext1='Start on all fours with your knees under your butt and your hands directly under your shoulder.\n\nThen take a breath and make your belly fall down,shoulders roll back and head come up towards the celling.';
 String childposetext1='Start with your knees and hands on the floor. Put your hands a little forward, widen your knees and put your toes together.';
 
+// yoga page easy yoga for beginners
+String clockwiseshoulderrollstext1='Stand or sit with your arms at your sides. Roll your shoulders up towards your ears,then roll them back and squeeze, then roll them down.\n\nRepeat the exercise.';
+String counterclockwiseshoulderrollstext1='Stand or sit wiith arms at your sides. Rolls your shoulder back and squeeze, then roll them up towards your ears. then roll them down.\n\nRepeat the exercise';
+String sidetosideturnstext1='Turn your head to the leftm and hold it for a few seconds.\n\nThen turn your head to the right, and also hold it for a few seconds.\n\nRepeat the exercise';
+String upanddownnodstext1='Bring your chin down to your chest, and hold it for few seconds.\n\nThen look up towards the celling and also hold it for a few seconds.\n\nRepeat the exercise.';
+String seatedspinaltwistlefttext1='Sit and cross your legs on the mat.\n\nPut your left hand on your right hand behind you on the floor.\n\nSlowly twist your upper body to the right. Hold it for few seconds.';
+String seatedspinaltwistlrighttext1='Sit and cross your legs on the mat.\n\nPut your right hand on your left hand behind you on the floor.\n\nSlowly twist your upper body to the left. Hold it for few seconds.';
+String seatedsidebendlefttext1='Sit and cross your legs on the mat. Lift your left arm overhead, and put your right hand on the floor for support.\n\nLook up at your left hand, and slowly bend your right arms, meanwhile, bend your upper body to the right. Hold it for a seconds.';
+String seatedsidebendrighttext1='Sit and cross your legs on the mat. Lift your right arm overhead, and put your left hand on the floor for support.\n\nLook up at your right hand, and slowly bend your left arms, meanwhile, bend your upper body to the left. Hold it for a seconds.';
+String walkthedogtext1='Start on all four with your hips up in an upside-down "V" shape. Alternately lift and lower your heels.';
+
+
+// yoga page sunsalutions flow 
+String chairtext1 = "Stand with your thighs closed, and raise your hands over your head.\n\nThen hend your knees and come to a sitting position.\n\nBend your torso forward slightly and extend your arms forward to keep your balance. Hold this position till time's up.";
+String forwardbendtext1 = 'Stand on the floor with your feet together.\n\nThen bend your body and bring your upper body as close to your legs as you can.\n\nHold this position for a few seconds and repeat.';
+String halfforwardbendtext1 = "Stand with your feet hip-width apart. Draw your belly in and tuck your tailbone down. Roll your shoulder back and down.\n\nBend your upper body foward and rest your hands on your legs. Bend from your hips instead of your waist.";
+String pushupholdtext1 = 'Lay prone on the ground with your arms supporting your body.\n\nBend your arms and lower your body until your upper arms are parallel to the floor.\n\nKeep your body straight. Hold this position';
+String upwardfacingdogtext1 = 'Lay prone with your hands under your shoulder and the tops of your feet on the floor.\n\nSlightly lift your legs off the floor. Straighten your arms and opne your chest toward the celling.\n\nYour gaze will go up slightly. Hold this position.';
+String downwardfacingdogtext1 = 'Start on all fours with your kees under your butt and your hands directly under your shoulder.\n\nStraighten your legs, and lift your hips up in an upside down "V" shape. Spread your feet apart, and spread your fingers. Transfer your weight back to your legs. Hold this postion.';
+String warriorilefttext1='Stand with your feet hip-distance apart. Take your left foot forward while keeping your right leg staight.\n\nTurn your right foot 60 degrees to your right. Lower your body until your left thigh is almost parallel to the floor.';
+String warriroirighttext1='Stand with your feet hip-distance apart. Take your right foot forward while keeping your left leg staight.\n\nTurn your left foot 60 degrees to your left. Lower your body until your right thigh is almost parallel to the floor.';
+
+
+// yoga kids yoga text
+String standingbackstretchestext1='Stand with feet a lettle widere than shoulder width apart.\n\nRaise your hands overhead with palms up towards the celling.\n\nUse one of your hands to grab the other. Bend your body side to side.';
+String standingcrossovertoetouchestext1='Stand straight with your feet wider than shoulder width apart. lIft your arms to the sides at the shoulder height, and bend your knees slightly.\n\nThen push your hips back, bend your body and touch the left toe with your right hand. Return to the starting position.\n\nSwitch side and repeat the exercise.';
+String torsotwisttext1='Stand on the floor with feet shoulder width apart, then rotate your body gently and slowly. This stretches your back and hips.\n\nRelax your shoulders. Your toes should always face forward.';
+String locustposttext1='Lie on your stomach with your legs extended and your arms by your sides.\n\nLift your shoulder, legs, and arms off the floor with your palns towards the celling. Hold this position.';
+String seatedbutterflystretchtext1='sit on the follr with your feet together, and grab your toes.\n\nOpen your knees to the sides, and press your knees down as much as possible.';
+String cobrastext1='Lie down on your stmoach and bend your elbows with your hands beneath your shoulders.\n\nKeep your toes back and your feet and legs relaxed on the ground.\n\nThen push your chest up off the ground as far as possible. Return to the start position and repeat.';
+
+// yoga morningyogaflow text
+String easyposetext1='Sit up straight on the mat with your legs straight ahead.\n\n Bend and widen your knees and cross your legs at the shins.\n\nPlace your hands on your knees, palms down.';
+String sidetosidetiltstext1='Tilt your head towards your left shoulder, and hold it for a few seconds\n\nThen tilt your head towards your right shoulder, and also hold it for a few seconds.\n\n Repeat the exercise.';
+String sphinxposetext1='Lie on your stomach with your forearms on the floor and your elbows under your shoulders. Extend your legs with the tops of your feet on the floor.\n\nInhale, lift your upper body and extend your neck away from your shoulders. Hold this position.';
+String pronetricepspushupstext1='Lie on your stomach with your hands underneath your shoulder and your elbows bent.\n\nSlightly raise your chest up, and then go back to the start position.\n\nRepeat this exercise.';
+String straightarmplanktext1='Start in the push-up position, but keep your arms straight. This exercise strengthens your abdomen and back muscles.';
+String standingbackbendtext1='Stand upright with your feet together. Raise your arms overhead with your palms facing each other.\n\nReach your arms up and back, as if you were lifting your chest towards the ceiling.';
+
+
+// evening yoga flow text
+String shouoldershrugstext1='Stand or sit on the floor. Raise your shoulders up towards your ears as far as you can, then drop them.\n\nRepeat the exercise';
+String easybutterflyposetext1='Sit with the soles of your feet together. Draw your heels towards your hips, and press your knees down as much as possible.\n\nPlace your hands in front of you, and try to lean forward.\n\nHold this position.';
+String easysplitsforwardfoldtext1='Sit uprihgt with your legs extended out to the sides.\n\nTry to fold your upper body forward slowly. You can put your hands in front of you for support and slightly bend your knees. Hold this position.';
+String bridgetext1='Lie flat on the floor, and lift your hips off the floor while keeping your back straight.\n\nHold this position as long as you can. The bridge exercise strengthens the whole abdomen, the lower back and the glutes.';
+String ploughposttext1='Lie face up on the mat. Bring your knees toward your chest, then straighten your legs toward the ceiling.\n\nUse your core stringth to lift your hips straight up toward the ceiling. Keep your legs straight.';
+
+
+// yoga arm workout
+String elbowsbacktext1='Stand up straight with your feet shoulder-width apart. Place your hands on both sides of your waist, fingers facing downwards and elbows facing outwards.\n\nGently pull your elbows backward, then bring them back to the starting position.\n\nRepeat the exercise.';
+String planktapstext1='Start in the straight arm plank position.\n\nLift your right hand to tap your left shoulder.\n\nReturn to the start position and repeat with the other hand.';
+String plankandreachtext1='Start in a traditional plank position, then alternately extend one arm forward\n\nKeep your body straight during the exercise.\n\nIts a great exercise for the abdominal muscle and deltoid muscle.';
+String crabwalktext1='Sit down with our legs bent, place your hands shoulder-width apart on the ground behind you, and make sure your fingers are facing sideways.\n\nLift your hips until your upper body is parallel to the ground and walk forward with your hands and feet.';
+String tricepsstretchlefttext1='Put your left hand on your back, use your right hand to grab your left elbows and gently pull it.\n\nHold this position for a few seconds.';
+String tricepsstretchrighttext1='Put your right hand on your back, use your left hand to grab your right elbows and gently pull it.\n\nHold this position for a few seconds.';
+String standingbicepsstretchlefttext1='Stand with your left arm close to a wall. Extend your left arm and put your left hand on the wall, then gently turn your body to the right.';
+String standingbicepsstretchrighttext1='Stand with your right arm close to a wall. Extend your right arm and put your right hand on the wall, then gently turn your body to the left.';
+
+// yoga page beginner inner thing tonight 
+String quickfeettext1='Start with your feet shoulder width apart. Bend your legs slightly and learn your upper body forward.\n\nPut your hands in front of you to keep balance, then run in place qucikly.';
+String buttkickstext1='Stand up on the floor, then run in place while kicking your  heel up to touch your butt with each step.\n\nTry to do it as fast as you can. Its a great exercise for the gluteus and hamstrings.';
+String bottomlegliftleft='Lie on your left side with your head resting on your left hand.\n\nThen put your right foot forward on the floor. Lift your left leg up and down.';
+String bottomlegliftright='Lie on your right side with your head resting on your right hand.\n\nThen put your left foot forward on the floor. Lift your right leg up and down.';
+String reclinedobliquetwisttext1='Lie on your back with your legs extended and your elbows directly under your shoulders.\n\nLift your left leg up at 45 degree angle while reaching your right arm over to your left side.\n\nThen slowly go back to the starting position. Repeat several times, and then switch to the other side.';
+String sumosquuattext1='Stand with your feet 6-12 inches apart. Stretch your arms in front of you.\n\nSower your body until your thighs are parallel to the floor. Return to the starting position and repeat the exercise.';
+String rightleglateralraisetext1='Stand and hold a chair with your left hand to keep balance.\n\nLift your right leg to your right side as much as possible. Return and repeat.';
+String leftleglateralraisetext2='Stand and hold a chair with your right hand to keep balance.\n\nLift your left leg to your left side as much as possible. Return and repeat';
+
+
+
+// yoga page legworkout
+String crosstouchandreachttext1='Stand on the floor with your arms extended to your sides at the shoulder height.\n\nThen bend your body and use your left hand to touch your right foot or get as close as your can. Switch sides and repeat';
+String standinghipcircletext1='Stand with your hands on your waist. Lift your left leg and move it clockwise in big circles, then move it counterclockwise. Switch legs and repeat the exercise.';
+String frogpress='Lie on your back with your legs lifted knees bend and heels squeezed together. Put your arms flat at your sides.\n\nStraighten your legs and bring them back to the starting position. Repeat the exercise';
+String scissors='Lie on your back with arms at sides, palms down and legs extended.\n\nLift your legs and cross the right thigh over the left, them reverse the exercise.\n\nMake sure your back is always flat.';
+String legupwalltext1='Put a pillow at the bottom of the wall. Lie on your back, lift and put your legs on the wall.\n\nMove your hips onto the pillow, as close to the wall as you can. Hold this position.';
+
+
+
 
 
 // food page Images

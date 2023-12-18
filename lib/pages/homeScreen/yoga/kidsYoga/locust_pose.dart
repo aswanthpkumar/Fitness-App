@@ -23,7 +23,7 @@ class LocustPose extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Locust Pose',
-        para1: '',
+        para1: locustposttext1,
         para2: '',
         pagecount: '7/9',
         ontapNext: () {

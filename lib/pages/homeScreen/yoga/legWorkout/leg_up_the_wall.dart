@@ -22,7 +22,7 @@ class LeguptheWall extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Leg Up the Wall',
-        para1: '',
+        para1: legupwalltext1,
         para2: '',
         pagecount: '5/5',
         ontapNext: () {},

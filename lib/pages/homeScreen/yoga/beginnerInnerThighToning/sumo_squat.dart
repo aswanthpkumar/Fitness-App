@@ -23,7 +23,7 @@ class SumoSquat extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Sumo Squat',
-        para1: '',
+        para1: sumosquuattext1,
         para2: '',
         pagecount: '6/8',
         ontapNext: () {

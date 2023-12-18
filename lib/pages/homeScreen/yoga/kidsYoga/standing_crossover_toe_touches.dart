@@ -23,7 +23,7 @@ class StandingCrossoverToeTouches extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Standing Crossover Toe Touches',
-        para1: '',
+        para1: standingcrossovertoetouchestext1,
         para2: '',
         pagecount: '4/9',
         ontapNext: () {

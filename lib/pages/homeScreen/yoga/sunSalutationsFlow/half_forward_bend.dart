@@ -1,12 +1,12 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/downward_faceing_dog.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sun_solutations_flow.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/upward_facing_dog_1.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/forward_bend.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/push_up_hold.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/sun_solutations_flow.dart';
 import 'package:flutter/material.dart';
 
-class WarriorILeft extends StatelessWidget {
-  const WarriorILeft({super.key});
+class HalfForwardBend extends StatelessWidget {
+  const HalfForwardBend({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,15 +22,15 @@ class WarriorILeft extends StatelessWidget {
           );
         },
         coverimage: powerjumps,
-        heading: 'Warrior I Left',
-        para1: '',
+        heading: 'Half Forward Bend',
+        para1: halfforwardbendtext1,
         para2: '',
-        pagecount: '7/10',
+        pagecount: '3/10',
         ontapNext: () {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (ctx) {
-                return const UpwardFacingDog1();
+                return const PushUpHold();
               },
             ),
           );
@@ -39,7 +39,7 @@ class WarriorILeft extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (ctx) {
-                return const DownwardFacingDog();
+                return const Forward();
               },
             ),
           );

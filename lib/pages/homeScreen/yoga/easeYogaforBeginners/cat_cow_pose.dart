@@ -23,7 +23,7 @@ class CatCowPose extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Cat Cow Pose',
-        para1: '',
+        para1: catcowposttext1,
         para2: '',
         pagecount: '9/11',
         ontapNext: () {

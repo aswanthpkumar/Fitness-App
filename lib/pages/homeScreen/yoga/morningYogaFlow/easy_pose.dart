@@ -22,7 +22,7 @@ class EasyPose extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Easy Pose',
-        para1: '',
+        para1: easyposetext1,
         para2: '',
         pagecount: '1/9',
         ontapNext: () {

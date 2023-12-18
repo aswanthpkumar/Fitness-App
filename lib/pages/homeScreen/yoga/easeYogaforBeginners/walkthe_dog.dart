@@ -22,7 +22,7 @@ class WalkTheDog extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Walk The Dog',
-        para1: '',
+        para1: walkthedogtext1,
         para2: '',
         pagecount: '11/11',
         ontapNext: () {},

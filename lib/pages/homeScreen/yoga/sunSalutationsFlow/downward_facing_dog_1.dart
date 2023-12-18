@@ -1,11 +1,12 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/downward_facing_dog_1.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sun_solutations_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/sun_solutations_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/upward_facing_dog_1.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/warrior_i_right.dart';
 import 'package:flutter/material.dart';
 
-class WarriorIRight extends StatelessWidget {
-  const WarriorIRight({super.key});
+class DownwardFacingDog1 extends StatelessWidget {
+  const DownwardFacingDog1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,16 +22,24 @@ class WarriorIRight extends StatelessWidget {
           );
         },
         coverimage: powerjumps,
-        heading: 'Warrior I Right',
-        para1: '',
+        heading: 'Downward Facing Dog',
+        para1: downwardfacingdogtext1,
         para2: '',
-        pagecount: '10/10',
-        ontapNext: () {},
+        pagecount: '9/10',
+        ontapNext: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) {
+                return const WarriorIRight();
+              },
+            ),
+          );
+        },
         ontapPrevious: () {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (ctx) {
-                return const DownwardFacingDog1();
+                return const UpwardFacingDog1();
               },
             ),
           );

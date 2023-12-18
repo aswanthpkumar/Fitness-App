@@ -23,7 +23,7 @@ class SidetoSideTilts extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Side to Side Tilts',
-        para1: '',
+        para1: sidetosidetiltstext1,
         para2: '',
         pagecount: '2/9',
         ontapNext: () {

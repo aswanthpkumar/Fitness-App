@@ -23,7 +23,7 @@ class StandingHipCircle extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Standing Hip Circle',
-        para1: '',
+        para1: standinghipcircletext1,
         para2: '',
         pagecount: '2/5',
         ontapNext: () {

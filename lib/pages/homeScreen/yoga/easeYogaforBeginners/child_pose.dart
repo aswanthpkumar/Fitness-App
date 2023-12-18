@@ -23,7 +23,7 @@ class ChildPose extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Child Pose',
-        para1: '',
+        para1: childposetext1,
         para2: '',
         pagecount: '10/11',
         ontapNext: () {

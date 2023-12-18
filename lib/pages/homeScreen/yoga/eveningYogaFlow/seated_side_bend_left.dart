@@ -23,7 +23,7 @@ class SeatedSideBendLeft extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Seated Side Bend Left',
-        para1: '',
+        para1: seatedsidebendlefttext1,
         para2: '',
         pagecount: '4/9',
         ontapNext: () {

@@ -23,7 +23,7 @@ class EasySplitsForwardFold extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Easy Splits Forward Fold',
-        para1: '',
+        para1: easysplitsforwardfoldtext1,
         para2: '',
         pagecount: '6/9',
         ontapNext: () {

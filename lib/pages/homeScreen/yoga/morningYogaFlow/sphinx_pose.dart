@@ -24,7 +24,7 @@ class SphinxPose extends StatelessWidget {
           },
           coverimage: powerjumps,
           heading: 'Sphinx Pose',
-          para1: '',
+          para1: sphinxposetext1,
           para2: '',
           pagecount: '5/9',
           ontapNext: () {

@@ -22,7 +22,7 @@ class Cobras extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Cobras',
-        para1: '',
+        para1: cobrastext1,
         para2: '',
         pagecount: '9/9',
         ontapNext: () {},

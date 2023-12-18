@@ -1,12 +1,12 @@
 import 'package:demo_project/assets.dart';
 import 'package:demo_project/pages/homeScreen/workouts/section_workouts.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/downward_faceing_dog.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/push_up_hold.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sun_solutations_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/downward_facing_dog_1.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/sun_solutations_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/warrior_i_left.dart';
 import 'package:flutter/material.dart';
 
-class UpwardFacingDog extends StatelessWidget {
-  const UpwardFacingDog({super.key});
+class UpwardFacingDog1 extends StatelessWidget {
+  const UpwardFacingDog1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,14 +23,14 @@ class UpwardFacingDog extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Upward Facing Dog',
-        para1: '',
+        para1: upwardfacingdogtext1,
         para2: '',
-        pagecount: '5/10',
+        pagecount: '8/10',
         ontapNext: () {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (ctx) {
-                return const DownwardFacingDog();
+                return const DownwardFacingDog1();
               },
             ),
           );
@@ -39,7 +39,7 @@ class UpwardFacingDog extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (ctx) {
-                return const PushUpHold();
+                return const WarriorILeft();
               },
             ),
           );

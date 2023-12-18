@@ -23,7 +23,7 @@ class ReclinedObliqueTwist extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Reclined Oblique Twist',
-        para1: '',
+        para1: reclinedobliquetwisttext1,
         para2: '',
         pagecount: '5/8',
         ontapNext: () {

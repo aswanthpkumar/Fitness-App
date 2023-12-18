@@ -10,7 +10,7 @@ import 'package:demo_project/pages/homeScreen/yoga/eveningYogaFlow/evening_yoga_
 import 'package:demo_project/pages/homeScreen/yoga/kidsYoga/kids_yoga.dart';
 import 'package:demo_project/pages/homeScreen/yoga/legWorkout/leg_workout.dart';
 import 'package:demo_project/pages/homeScreen/yoga/morningYogaFlow/morning_yoga_flow.dart';
-import 'package:demo_project/pages/homeScreen/yoga/sunSolutationsFlow/sun_solutations_flow.dart';
+import 'package:demo_project/pages/homeScreen/yoga/sunSalutationsFlow/sun_solutations_flow.dart';
 import 'package:flutter/material.dart';
 
 class Yoga extends StatelessWidget {
@@ -30,7 +30,7 @@ class Yoga extends StatelessWidget {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (ctx) {
-                          return HomePage();
+                          return const HomePage();
                         },
                       ),
                     );

@@ -23,7 +23,7 @@ class SeatedButterflyStretch extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Seated Butterfly Stretch',
-        para1: '',
+        para1: seatedbutterflystretchtext1,
         para2: '',
         pagecount: '8/9',
         ontapNext: () {

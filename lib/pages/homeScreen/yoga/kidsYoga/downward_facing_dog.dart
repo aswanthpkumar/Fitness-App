@@ -23,7 +23,7 @@ class DownwardFacinDogKids extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Downward Facing Dog',
-        para1: '',
+        para1: downwardfacingdogtext1,
         para2: '',
         pagecount: '5/9',
         ontapNext: () {

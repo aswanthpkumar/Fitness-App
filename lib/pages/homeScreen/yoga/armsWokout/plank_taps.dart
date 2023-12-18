@@ -23,7 +23,7 @@ class PlankTaps extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Plank Taps',
-        para1: '',
+        para1: planktapstext1,
         para2: '',
         pagecount: '2/8',
         ontapNext: () {

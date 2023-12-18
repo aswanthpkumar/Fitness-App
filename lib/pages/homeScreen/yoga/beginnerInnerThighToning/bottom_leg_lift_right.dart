@@ -23,7 +23,7 @@ class BottomLegLiftRight extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Bottom Leg Lift Right',
-        para1: '',
+        para1: bottomlegliftright,
         para2: '',
         pagecount: '4/8',
         ontapNext: () {

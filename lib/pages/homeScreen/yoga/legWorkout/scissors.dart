@@ -23,7 +23,7 @@ class Scissors extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Scissors',
-        para1: '',
+        para1: scissors,
         para2: '',
         pagecount: '4/5',
         ontapNext: () {

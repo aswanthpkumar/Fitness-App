@@ -23,7 +23,7 @@ class ButtKicks extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Butt Kicks',
-        para1: '',
+        para1: buttkickstext1,
         para2: '',
         pagecount: '2/8',
         ontapNext: () {

@@ -22,8 +22,8 @@ class SeatedSpinalTwistRight extends StatelessWidget {
           );
         },
         coverimage: powerjumps,
-        heading: 'Seated Sinal Twist Right',
-        para1: '',
+        heading: 'Seated Spinal Twist Right',
+        para1: seatedspinaltwistlrighttext1,
         para2: '',
         pagecount: '6/11',
         ontapNext: () {

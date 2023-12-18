@@ -22,7 +22,7 @@ class CrossTouchandReach extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Cross Touch and Reach',
-        para1: '',
+        para1: crosstouchandreachttext1,
         para2: '',
         pagecount: '1/5',
         ontapNext: () {

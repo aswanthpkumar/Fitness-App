@@ -23,7 +23,7 @@ class PlankandReach extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Plank and Reach',
-        para1: '',
+        para1: plankandreachtext1,
         para2: '',
         pagecount: '3/8',
         ontapNext: () {

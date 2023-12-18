@@ -23,7 +23,7 @@ class RightLegLateralRaise extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Right Leg Lateral Raise',
-        para1: '',
+        para1: rightleglateralraisetext1,
         para2: '',
         pagecount: '7/8',
         ontapNext: () {

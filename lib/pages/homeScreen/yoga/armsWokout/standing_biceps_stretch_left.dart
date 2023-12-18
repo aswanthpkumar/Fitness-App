@@ -23,7 +23,7 @@ class StandingBicepsStretchLeft extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Standing Biceps Stretch Left',
-        para1: '',
+        para1: standingbicepsstretchlefttext1,
         para2: '',
         pagecount: '7/8',
         ontapNext: () {

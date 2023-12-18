@@ -23,7 +23,7 @@ class FrogPress extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Frog Press',
-        para1: '',
+        para1: frogpress,
         para2: '',
         pagecount: '3/5',
         ontapNext: () {

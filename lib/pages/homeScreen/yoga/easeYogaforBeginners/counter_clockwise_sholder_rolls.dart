@@ -23,7 +23,7 @@ class CounterclockwiseSholderRolls extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Counterclockwise Sholder Rolls',
-        para1: '',
+        para1: counterclockwiseshoulderrollstext1,
         para2: '',
         pagecount: '2/11',
         ontapNext: () {

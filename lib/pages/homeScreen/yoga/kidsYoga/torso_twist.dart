@@ -23,7 +23,7 @@ class TorsoTwist extends StatelessWidget {
         },
         coverimage: powerjumps,
         heading: 'Torso Twist',
-        para1: '',
+        para1: torsotwisttext1,
         para2: '',
         pagecount: '6/9',
         ontapNext: () {
